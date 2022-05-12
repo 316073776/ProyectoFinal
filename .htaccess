@@ -1,0 +1,14 @@
+ErrorDocument 404 /error/404.html
+ErrorDocument 403 /error/403.html
+
+Options -Indexes
+
+<FilesMatch "\.(htm|html|css|js|php)$">
+	AddDefaultCharset UTF-8
+	DefaultLanguage es-MX
+</FilesMatch>
+
+<FilesMatch "\.(md|txt|git|conf)$">
+	Order allow,deny
+	Deny from all
+</FilesMatch>
