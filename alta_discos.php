@@ -1,21 +1,21 @@
 <?php
 	include 'conexion.php';
 	$titulo = strip_tags($_POST['titulo']);
-	$grupo = strip_tags($_POST['grupo']);
-	$anio = strip_tags($_POST['anio']);
+	$grupo_id = strip_tags($_POST['grupo_id']);
+	$anio = strip_tags($_POST['año']);
 	$genero = strip_tags($_POST['genero']);
-	$disquera = strip_tags($_POST['disquera']);
-	$productor = strip_tags($_POST['productor']);
+	$disquera_id = strip_tags($_POST['disquera_id']);
+	$productor_id = strip_tags($_POST['productor_id']);
 	$costo = strip_tags($_POST['costo']);
 
 
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $titulo)){
-		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $grupo)){
+		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $grupo_id)){
                         if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $genero)){
-				if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $disquera)){
-                       			if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $productor)){
+				if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $disquera_id)){
+                       			if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $productor_id)){
                                 		if(preg_match('/^-?(\d|[1-9]+\d*|\.\d+|0\.\d+|[1-9]+\d*\.\d+)$/', $costo)){
-                        				$insercion= "insert into usuario(titulo,grupo,anio,genero,disquera,productor,costo) values('$titulo','$grupo','$anio','$genero','$disquera','$productor','$costo')";
+                        				$insercion= "insert into usuario(titulo,grupo_id,año,genero,disquera_id,productor_id,costo) values('$titulo','$grupo_id','$anio','$genero','$disquera_id','$productor_id','$costo')";
         						$query = pg_query($con,$insercion);
         						if($query){
                 						echo "Se ha almacenado en la base de datos de forma correcta  ";
@@ -33,3 +33,4 @@
 		echo "  Los datos no son validos  ";
 	}
 ?>
+_id

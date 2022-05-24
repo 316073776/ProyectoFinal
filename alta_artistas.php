@@ -2,16 +2,16 @@
 	include 'conexion.php';
 	$nombre = strip_tags($_POST['nombre']);
 	$apellido = strip_tags($_POST['apellido']);
-	$pais = strip_tags($_POST['pais']);
-	$nacimiento = strip_tags($_POST['anio']);
-	$nartistico = strip_tags($_POST['nartistico']);
+	$pais_nacimiento = strip_tags($_POST['pais_nacimiento']);
+	$fecha_nacimiento = strip_tags($_POST['fecha_nacimiento']);
+	$nombre_artistico = strip_tags($_POST['nombre_artistico']);
 
 
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
 		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $apellido)){
-                        if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais)){
-				if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nartistico)){
-                        		$insercion= "insert into usuario(nombre,apellido,pais,anio,nartistico) values('$nombre','$apellido','$pais','$anio','$nartistico')";
+                        if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais_nacimiento)){
+				if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre_artistico)){
+                        		$insercion= "insert into usuario(nombre,apellido,pais_nacimiento,fecha_nacimiento,nombre_artistico) values('$nombre','$apellido','$pais_nacimiento','$fecha_nacimiento','$nombre_artistico')";
         				$query = pg_query($con,$insercion);
         				if($query){
                 				echo "Se ha almacenado en la base de datos de forma correcta  ";

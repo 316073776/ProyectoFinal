@@ -16,11 +16,11 @@
 			<label for="apellido">Apellido: </label>
 			<input type="text" name="apellido" id="apellido">
 			<br/>
-			<label for="pais">Pais de nacimiento: </label>
-			<input type="text" name="pais" id="pais">
+			<label for="pais_nacimiento">Pais de nacimiento: </label>
+			<input type="text" name="pais_nacimiento" id="pais_nacimiento">
 			<br/>
-			<label for="nacimiento">Fecha de nacimiento: </label>
-			<input type="date" name="nacimiento" id="nacimiento">
+			<label for="fecha_nacimiento">Fecha de nacimiento: </label>
+			<input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
 			<br/>
 
 			<button type="submit" id="enviar">Confirmar</button>

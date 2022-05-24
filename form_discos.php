@@ -13,20 +13,20 @@
 			<label for="titulo">Titulo: </label>
 			<input type="text" name="titulo" id="titulo">
 			<br/>
-			<label for="grupo">Grupo: </label>
-			<input type="text" name="grupo" id="grupo">
+			<label for="grupo_id">Grupo: </label>
+			<input type="text" name="grupo_id" id="grupo_id">
 			<br/>
-			<label for="anio">Año: </label>
-			<input type="date" name="anio" id="anio">
+			<label for="año">Año: </label>
+			<input type="date" name="año" id="año">
 			<br/>
 			<label for="genero">Genero: </label>
 			<input type="text" name="genero" id="genero">
 			<br/>
-			<label for="disquera">Disquera: </label>
-                        <input type="text" name="disquera" id="disquera">
+			<label for="disquera_id">Disquera: </label>
+                        <input type="text" name="disquera_id" id="disquera_id">
                         <br/>
-			<label for="productor">Productor: </label>
-                        <input type="text" name="productor" id="productor">
+			<label for="productor_id">Productor: </label>
+                        <input type="text" name="productor_id" id="productor_id">
                         <br/>
 			<label for="costo">Costo: </label>
                         <input type="float" name="costo" id="costo">
