@@ -5,8 +5,8 @@ $(document).ready(function(){
 			{
 				nombre: $("#nombre").val(),
 				apellido: $("#apellido").val(),
-				pais: $("#pais").val(),
-				nacimiento: $("#nacimiento").val(),
+				pais_nacimiento: $("#pais_nacimiento").val(),
+				fecha_nacimiento: $("#fecha_nacimiento").val(),
 			},
 			function(data, status){
 				alert("Status:"+status);
@@ -25,12 +25,12 @@ $(document).ready(function(){
                                 minlength: 2,
                                 maxlength: 30
                         },
-			pais: {
+			pais_nacimiento: {
                                 required: true,
 				minlength: 2,
 				maxlength: 50
                         },
-			nacimiento: {
+			fecha_nacimiento: {
                                 required: true,
                         }
 		},
@@ -46,12 +46,12 @@ $(document).ready(function(){
                                 minlenght: "Apellido debe tener minimo 2 caracteres",
                                 maxlenght: "Apellido Paterno tener maximo 30 caracteres"
                         },
-			pais: {
+			pais_nacimiento: {
                                 required: "Campo obligatorio",
                                 minlenght: "Pais debe tener minimo 2 caracteres",
                                 maxlenght: "Pais debe tener maximo 30 caracteres"
                         },
-			nacimiento: {
+			fecha_nacimiento: {
                                 required: "Campo obligatorio",
                         }
 		}

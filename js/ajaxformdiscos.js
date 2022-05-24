@@ -4,11 +4,11 @@ $(document).ready(function(){
 		$.post("alta_discos.php",
 			{
 				titulo: $("#titulo").val(),
-				grupo: $("#grupo").val(),
-				anio: $("#anio").val(),
+				grupo: $("#grupo_id").val(),
+				año: $("#año").val(),
 				genero: $("#genero").val(),
-				disquera: $("#disquera").val(),
-				productor: $("#productor").val(),
+				disquera: $("#disquera_id").val(),
+				productor: $("#productor_id").val(),
 				costo: $("#costo").val()
 			},
 			function(data, status){
@@ -23,12 +23,12 @@ $(document).ready(function(){
 				minlength: 2,
 				maxlength: 30
 			},
-			grupo: {
+			grupo_id: {
                                 required: true,
                                 minlength: 2,
                                 maxlength: 30
                         },
-			anio: {
+			año: {
                                 required: true,
                         },
 			genero: {
@@ -36,12 +36,12 @@ $(document).ready(function(){
                                 minlength: 2,
                                 maxlength: 50
                         },
-			disquera: {
+			disquera_id: {
                                 required: true,
                                 minlength: 2,
                                 maxlength: 50
                         },
-			productor: {
+			productor_id: {
                                 required: true,
                                 minlength: 2,
                                 maxlength: 50
@@ -60,12 +60,12 @@ $(document).ready(function(){
 				minlenght: "Titulo debe tener minimo 2 caracteres",
 				maxlenght: "Titulo debe tener maximo 30 caracteres"
 			},
-			grupo: {
+			grupo_id: {
                                 required: "Campo obligatorio",
                                 minlenght: "Grupo debe tener minimo 2 caracteres",
                                 maxlenght: "Grupo Paterno tener maximo 30 caracteres"
                         },
-			anio: {
+			año: {
                                 required: "Campo obligatorio",
                         },
 			genero: {
@@ -73,12 +73,12 @@ $(document).ready(function(){
                                 minlenght: "Genero debe tener minimo 2 caracteres",
                                 maxlenght: "Genero debe tener maximo 30 caracteres"
                         },
-			disquera: {
+			disquera_id: {
                                 required: "Campo obligatorio",
                                 minlenght: "Disquera debe tener minimo 2 caracteres",
                                 maxlenght: "Disquera debe tener maximo 30 caracteres"
                         },
-			productor: {
+			productor_id: {
                                 required: "Campo obligatorio",
                                 minlenght: "Productor debe tener minimo 2 caracteres",
                                 maxlenght: "Productor debe tener maximo 30 caracteres"

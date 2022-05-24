@@ -1,13 +1,11 @@
 $(document).ready(function(){
 	$('#formulario').validate({
 		submitHandler: function(){
-		$.post("alta_artistas.php",
+		$.post("alta_productores.php",
 			{
 				nombre: $("#nombre").val(),
 				apellido: $("#apellido").val(),
-				pais_nacimiento: $("#pais_nacimiento").val(),
 				fecha_nacimiento: $("#fecha_nacimiento").val(),
-				nombre_artistico: $("#nombre_artistico").val(),
 			},
 			function(data, status){
 				alert("Status:"+status);
@@ -26,18 +24,8 @@ $(document).ready(function(){
                                 minlength: 2,
                                 maxlength: 30
                         },
-			pais_nacimiento: {
-                                required: true,
-				minlength: 2,
-				maxlength: 50
-                        },
 			fecha_nacimiento: {
                                 required: true,
-                        },
-			nombre_artistico: {
-                                required: true,
-                                minlength: 2,
-                                maxlength: 50
                         }
 		},
 
@@ -52,18 +40,8 @@ $(document).ready(function(){
                                 minlenght: "Apellido debe tener minimo 2 caracteres",
                                 maxlenght: "Apellido Paterno tener maximo 30 caracteres"
                         },
-			pais_nacimiento: {
+			nacimiento: {
                                 required: "Campo obligatorio",
-                                minlenght: "Pais debe tener minimo 2 caracteres",
-                                maxlenght: "Pais debe tener maximo 30 caracteres"
-                        },
-			fecha_nacimiento: {
-                                required: "Campo obligatorio",
-                        },
-			nombre_artistico: {
-                                required: "Campo obligatorio",
-                                minlenght: "Nartistico debe tener minimo 2 caracteres",
-                                maxlenght: "Nartistico debe tener maximo 7 caracteres"
                         }
 		}
 	});
