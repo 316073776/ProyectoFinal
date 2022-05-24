@@ -21,12 +21,12 @@ $(document).ready(function(){
 			titulo: {
 				required: true,
 				minlength: 2,
-				maxlength: 30
+				maxlength: 50
 			},
 			grupo_id: {
                                 required: true,
-                                minlength: 2,
-                                maxlength: 30
+                                minlength: 1,
+                                maxlength: 10
                         },
 			año: {
                                 required: true,
@@ -38,13 +38,13 @@ $(document).ready(function(){
                         },
 			disquera_id: {
                                 required: true,
-                                minlength: 2,
-                                maxlength: 50
+                                minlength: 1,
+                                maxlength: 10
                         },
 			productor_id: {
                                 required: true,
-                                minlength: 2,
-                                maxlength: 50
+                                minlength: 1,
+                                maxlength: 10
                         },
 			costo: {
                                 required: true,
@@ -58,12 +58,12 @@ $(document).ready(function(){
 			titulo: {
 				required: "Campo obligatorio",
 				minlenght: "Titulo debe tener minimo 2 caracteres",
-				maxlenght: "Titulo debe tener maximo 30 caracteres"
+				maxlenght: "Titulo debe tener maximo 50 caracteres"
 			},
 			grupo_id: {
                                 required: "Campo obligatorio",
-                                minlenght: "Grupo debe tener minimo 2 caracteres",
-                                maxlenght: "Grupo Paterno tener maximo 30 caracteres"
+                                minlenght: "Grupo debe tener minimo 1 numero",
+                                maxlenght: "Grupo Paterno tener maximo 10 numeros"
                         },
 			año: {
                                 required: "Campo obligatorio",
@@ -71,17 +71,17 @@ $(document).ready(function(){
 			genero: {
                                 required: "Campo obligatorio",
                                 minlenght: "Genero debe tener minimo 2 caracteres",
-                                maxlenght: "Genero debe tener maximo 30 caracteres"
+                                maxlenght: "Genero debe tener maximo 50 caracteres"
                         },
 			disquera_id: {
                                 required: "Campo obligatorio",
-                                minlenght: "Disquera debe tener minimo 2 caracteres",
-                                maxlenght: "Disquera debe tener maximo 30 caracteres"
+                                minlenght: "Disquera debe tener minimo 1 numero",
+                                maxlenght: "Disquera debe tener maximo 10 numeros"
                         },
 			productor_id: {
                                 required: "Campo obligatorio",
-                                minlenght: "Productor debe tener minimo 2 caracteres",
-                                maxlenght: "Productor debe tener maximo 30 caracteres"
+                                minlenght: "Productor debe tener minimo 1 numero",
+                                maxlenght: "Productor debe tener maximo 10 numeros"
                         },
 			costo: {
                                 required: "Campo obligatorio",

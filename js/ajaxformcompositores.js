@@ -18,12 +18,12 @@ $(document).ready(function(){
 			nombre: {
 				required: true,
 				minlength: 2,
-				maxlength: 30
+				maxlength: 50
 			},
 			apellido: {
                                 required: true,
                                 minlength: 2,
-                                maxlength: 30
+                                maxlength: 50
                         },
 			pais_nacimiento: {
                                 required: true,
@@ -39,17 +39,17 @@ $(document).ready(function(){
 			nombre: {
 				required: "Campo obligatorio",
 				minlenght: "Nombre debe tener minimo 2 caracteres",
-				maxlenght: "Nombre debe tener maximo 30 caracteres"
+				maxlenght: "Nombre debe tener maximo 50 caracteres"
 			},
 			apellido: {
                                 required: "Campo obligatorio",
                                 minlenght: "Apellido debe tener minimo 2 caracteres",
-                                maxlenght: "Apellido Paterno tener maximo 30 caracteres"
+                                maxlenght: "Apellido Paterno tener maximo 50 caracteres"
                         },
 			pais_nacimiento: {
                                 required: "Campo obligatorio",
                                 minlenght: "Pais debe tener minimo 2 caracteres",
-                                maxlenght: "Pais debe tener maximo 30 caracteres"
+                                maxlenght: "Pais debe tener maximo 50 caracteres"
                         },
 			fecha_nacimiento: {
                                 required: "Campo obligatorio",
