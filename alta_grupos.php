@@ -6,7 +6,7 @@
 
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
 		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais_origen)){
-                        $insercion= "insert into usuario(nombre,pais_origen) values('$nombre','$pais_origen')";
+                        $insercion= "insert into grupos(nombre,pais_origen) values('$nombre','$pais_origen')";
         		$query = pg_query($con,$insercion);
         		if($query){
                 		echo "Se ha almacenado en la base de datos de forma correcta  ";

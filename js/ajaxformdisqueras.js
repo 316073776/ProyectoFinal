@@ -1,11 +1,10 @@
 $(document).ready(function(){
 	$('#formulario').validate({
 		submitHandler: function(){
-		$.post("alta_productores.php",
+		$.post("alta_disqueras.php",
 			{
 				nombre: $("#nombre").val(),
-				apellido: $("#apellido").val(),
-				fecha_nacimiento: $("#fecha_nacimiento").val(),
+				pais_origen: $("#pais").val(),
 			},
 			function(data, status){
 				alert("Status:"+status);
@@ -19,13 +18,10 @@ $(document).ready(function(){
 				minlength: 2,
 				maxlength: 50
 			},
-			apellido: {
+			pais: {
                                 required: true,
-                                minlength: 2,
-                                maxlength: 50
-                        },
-			fecha_nacimiento: {
-                                required: true,
+				minlength: 2,
+				maxlength: 50,
                         }
 		},
 
@@ -35,13 +31,10 @@ $(document).ready(function(){
 				minlenght: "Nombre debe tener minimo 2 caracteres",
 				maxlenght: "Nombre debe tener maximo 50 caracteres"
 			},
-			apellido: {
+			pais: {
                                 required: "Campo obligatorio",
-                                minlenght: "Apellido debe tener minimo 2 caracteres",
-                                maxlenght: "Apellido Paterno tener maximo 50 caracteres"
-                        },
-			nacimiento: {
-                                required: "Campo obligatorio",
+                                minlenght: "Pais debe tener minimo 2 caracteres",
+                                maxlenght: "pais debe tener maximo 50 caracteres"
                         }
 		}
 	});
