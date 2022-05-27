@@ -11,6 +11,14 @@ CREATE DATABASE bdrecords;
 CREATE SCHEMA bdrecords;
 
 --Creacion de las tablas
+CREATE TABLE usuarios(
+	usuario_id SERIAL PRIMARY KEY,
+	nombre VARCHAR(50) NOT NULL,
+	apaterno VARCHAR(50) NOT NULL,
+	amaterno VARCHAR(50) NOT NULL,
+	contrasena VARCHAR(60) NOT NULL
+);
+
 CREATE TABLE artistas(
 	Artista_id SERIAL PRIMARY KEY,
 	Nombre VARCHAR(50) NOT NULL,
@@ -347,6 +355,7 @@ INSERT INTO disco_cancion VALUES (17,27);
 INSERT INTO disco_cancion VALUES (20,25);
 
 --Asignacion de las tablas al esquema
+ALTER TABLE usuarios SET SCHEMA bdrecords;
 ALTER TABLE artistas SET SCHEMA bdrecords;
 ALTER TABLE discos SET SCHEMA bdrecords;
 ALTER TABLE grupos SET SCHEMA bdrecords;

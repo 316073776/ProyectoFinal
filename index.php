@@ -28,7 +28,7 @@
 		        <button type="submit">LOGIN</button>
 		       
 			</form>
-
+			<a href="./form_usuarios.php">¿No tienes cuenta? Registrate</a>
 		  </div>
 		</div>
          
