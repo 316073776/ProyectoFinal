@@ -3,18 +3,23 @@ $(document).ready(function(){
 		submitHandler: function(){
 		$.post("alta_usuarios.php",
 			{
+				username: $("#username").val(),
 				nombre: $("#nombre").val(),
 				apaterno: $("#apaterno").val(),
 				amaterno: $("#amaterno").val(),
 				contrasena: $("#contrasena").val(),
 			},
 			function(data, status){
-				alert("Status: "+ status + "Data: " + data);
 				$("#formulario").trigger("reset");
 			});
 		},
 
 		rules: {
+			username: {
+                                required: true,
+                                minlength: 2,
+                                maxlength: 50
+                        },
 			nombre: {
 				required: true,
 				minlength: 2,
@@ -38,6 +43,11 @@ $(document).ready(function(){
 		},
 
 		messagges: {
+			username: {
+                                required: "Campo obligatorio",
+                                minlength: "Nombre de usuario debe tener minimo 2 caracteres",
+                                maxlength: "Nombre debe tener maximo 50 caracteres"
+                        },
 			nombre: {
 				required: "Campo obligatorio",
 				minlength: "Nombre debe tener minimo 2 caracteres",
@@ -62,3 +72,4 @@ $(document).ready(function(){
 	});
 
 });
+

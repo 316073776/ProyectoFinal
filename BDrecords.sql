@@ -13,6 +13,7 @@ CREATE SCHEMA bdrecords;
 --Creacion de las tablas
 CREATE TABLE usuarios(
 	usuario_id SERIAL PRIMARY KEY,
+	username VARCHAR(50) NOT NULL,
 	nombre VARCHAR(50) NOT NULL,
 	apaterno VARCHAR(50) NOT NULL,
 	amaterno VARCHAR(50) NOT NULL,

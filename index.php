@@ -22,8 +22,8 @@
 		        <label for="username">USUARIO:</label>
 		        <input type="text" name="username" id="username" placeholder="Usuario">
 		        
-				<label for="password">CONTRASEÑA:</label>
-		        <input type="password" name="password" id="password" placeholder="Min 6 caracteres">
+				<label for="contrasena">CONTRASEÑA:</label>
+		        <input type="password" name="contrasena" id="contrasena" placeholder="Min 6 caracteres">
 		        
 		        <button type="submit">LOGIN</button>
 		       
