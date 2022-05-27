@@ -1,3 +1,9 @@
+<?php 
+	session_start();
+	if(isset($_SESSION) && isset($_SESSION['usuario'])){
+		header("Location: form_artistas.php");
+	}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -11,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet"> 
+	<script src="./js/jquery-3.6.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./js/ajaxformlogin.js"></script>	
     </head>
     
     <body>
@@ -25,13 +34,13 @@
 		        <label for="username">USUARIO:</label>
 		        <input type="text" name="username" id="username" placeholder="Usuario">
 		        
-				<label for="password">CONTRASEÑA:</label>
-		        <input type="password" name="password" id="password" placeholder="Min 6 caracteres">
+				<label for="contrasena">CONTRASEÑA:</label>
+		        <input type="password" name="contrasena" id="contrasena" placeholder="Min 6 caracteres">
 		        
 		        <button type="submit">LOGIN</button>
 		       
 			</form>
-
+			<a href="./form_usuarios.php">¿No tienes cuenta? Registrate</a>
 		  </div>
 
 		  <a class="button-reg" href="#">Registrate aquí</a>
