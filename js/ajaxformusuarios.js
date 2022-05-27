@@ -11,6 +11,11 @@ $(document).ready(function(){
 			},
 			function(data, status){
 				$("#formulario").trigger("reset");
+				if(data == "1"){
+					window.location.href = "http://http://www.final.unam.mx/index.php";
+				}else{
+					alert("Error en el formulario");
+				}
 			});
 		},
 

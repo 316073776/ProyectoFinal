@@ -15,7 +15,7 @@
                         		$insercion= "insert into bdrecords.usuarios(nombre,username,apaterno,amaterno,contrasena) values('$nombre','$username','$apaterno','$amaterno','$contrasena')";
         				$query = pg_query($con,$insercion);
         				if($query){
-                				header("Location: index.php?success=true");
+                				echo true;
         				} else {
                 				echo "  No se ha podido almacenar en la base de datos  ";
         				}
