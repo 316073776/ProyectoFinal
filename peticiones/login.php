@@ -7,7 +7,7 @@
 </head>
 <body>
 <p>Hola login.php</p>
-<p>verifica, inicia sesion y redirige a <a href="catalogo_discos.php">catálogo_discos.php</a> en caso contrario, regresa a index.php</p>
+<p>verifica, inicia sesion y redirige a <a href="../catalogo_discos.php">catálogo_discos.php</a> en caso contrario, regresa a index.php</p>
 </body>
 </html>
 

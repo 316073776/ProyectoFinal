@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+:root {
+  --imperial-red: #e63946ff; 
+  --honeydew: #f1faeeff; 
+  --powder-blue: #a8dadcff; 
+  --celadon-blue: #457b9dff; 
+  --prussian-blue: #1d3557ff;
+  --blanco-principal: #ecf0f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blanco-principal);
+}
+
+.nav {
+  width: 100vw;
+  height: 100px;
+  background-color: var(--blanco-principal);
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  list-style-type: none;
+}
+
+.nav li {
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  color: dimgray;
+}
+
+.nav li:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
+}
+
+.nav li:focus {
+  outline: none;
+  transform: scale(0.95);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white, 4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+}
+
+.nav li:hover, .nav li:focus {
+  color: var(--celadon-blue);
+}
+
+li.active {
+  outline: none;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white, 4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+  color: var(--celadon-blue);
+}
+

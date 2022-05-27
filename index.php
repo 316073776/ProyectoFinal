@@ -8,11 +8,14 @@
     <title>Proyecto final</title>
 
     <link href="css/stylelogin.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet"> 
     </head>
     
     <body>
 
-		<div class="container">
+		<div class="container-login">
 		  <div class="brand-logo"></div>
 		  <div class="brand-title">INICIAR SESIÓN</div>
 		  <div class="inputs">
@@ -30,7 +33,11 @@
 			</form>
 
 		  </div>
+
+		  <a class="button-reg" href="#">Registrate aquí</a>
+		  <a class="credits" href="creditos.html">CRÉDITOS</a>
 		</div>
+		
          
     </body>
 </html>
