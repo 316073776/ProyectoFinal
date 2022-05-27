@@ -40,7 +40,6 @@
 		        <button type="submit">LOGIN</button>
 		       
 			</form>
-			<a href="./form_usuarios.php">¿No tienes cuenta? Registrate</a>
 		  </div>
 
 		  <a class="button-reg" href="#">Registrate aquí</a>
