@@ -1,3 +1,4 @@
+<?php require_once 'helpers/helpers.php'; ?>
 <!doctype html>
 <html lang="en">
     <head>

@@ -1,11 +1,12 @@
 <?php require_once 'templates/header.php'; ?>
-	<body>
+<?php 
+	if(!isUser()){
 
-      <ul class="nav">
-        <li tabindex="0" class="active"><i class="bi bi-house-fill"></i> Inicio </li>
-        <li tabindex="0"><i class="bi bi-people-fill"></i>Créditos</li>
-        <li tabindex="0"><i class="bi bi-door-open-fill"></i>Cerrar sesión</li>
-      </ul>
+		header('Location: index.php');
+	}
+?>
+	<body>
+		<?php require_once 'templates/menu.php'; ?>
 		<div class="flex flex-col justify-center items-center mt-5 mb-5">
 			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
 				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para registro de productores</h1>
