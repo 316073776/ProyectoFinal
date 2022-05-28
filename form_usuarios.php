@@ -1,6 +1,6 @@
 <?php require_once 'templates/header.php'; ?>
 <body class="flex flex-col justify-center items-center">
-	<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
+	<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5 mt-5 mb-5">
 		<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para registro de usuarios</h1>
 		<form id="formulario">
 			<div class="w-full flex flex-col mb-5">

@@ -6,12 +6,17 @@
         <li tabindex="0"><i class="bi bi-people-fill"></i>Créditos</li>
         <li tabindex="0"><i class="bi bi-door-open-fill"></i>Cerrar sesión</li>
       </ul>
-		<h1>Formulario para registro de canciones</h1>
-		<form id="formulario">
-			<label for="titulo">Titulo: </label>
-			<input type="text" name="titulo" id="titulo">
-			<br/>
+		<div class="flex flex-col justify-center items-center mt-5 mb-5">
+			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
+				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para registro de artistas</h1>
+				<form id="formulario">
+					<div class="w-full flex flex-col mb-5">
+						<label for="titulo" class="text-gray-700 uppercase font-bold">Titulo: </label>
+						<input type="text" name="titulo" id="titulo" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
+					</div>
 
-			<button type="submit" id="enviar">Confirmar</button>
-		</form>
+					<button type="submit" id="enviar" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Confirmar</button>
+				</form>
+			</div>
+		</div>
 		<?php require_once 'templates/footer.php'; ?>
