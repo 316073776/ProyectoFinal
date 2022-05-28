@@ -4,7 +4,7 @@
 
 
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $titulo)){
-		$insercion= "insert into canciones(titulo) values('$titulo')";
+		$insercion= "insert into bdrecords.canciones(titulo) values('$titulo')";
         	$query = pg_query($con,$insercion);
         	if($query){
                 	echo "Se ha almacenado en la base de datos de forma correcta  ";

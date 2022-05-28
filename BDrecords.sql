@@ -17,7 +17,10 @@ CREATE TABLE usuarios(
 	nombre VARCHAR(50) NOT NULL,
 	apaterno VARCHAR(50) NOT NULL,
 	amaterno VARCHAR(50) NOT NULL,
-	contrasena VARCHAR(60) NOT NULL
+	contrasena VARCHAR(60) NOT NULL,
+
+	CONSTRAINT uq_username
+	UNIQUE (username);
 );
 
 CREATE TABLE artistas(

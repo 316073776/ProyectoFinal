@@ -13,7 +13,7 @@
 				if(password_verify($contrasena, $user[0]['contrasena'])){
 					session_start();
 					$_SESSION['usuario'] = $user[0];
-					echo 'Exito';
+					echo true;
 				}else{
 					echo 'La contraseña es incorrecta';
 				}
