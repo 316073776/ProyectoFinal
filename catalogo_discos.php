@@ -21,6 +21,5 @@
         <li tabindex="0"><i class="bi bi-people-fill"></i>Créditos</li>
         <li tabindex="0"><i class="bi bi-door-open-fill"></i>Cerrar sesión</li>
       </ul>
-
     </body>
 </html>

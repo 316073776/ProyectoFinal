@@ -1,13 +1,5 @@
-<!DOCTYPE>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Formulario Alta Artistas</title>
-		<script src="js/jquery-3.6.0.js"></script>
-		<script src="js/ajaxformusuarios.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-	</head>
-	<body>
+<?php require_once 'templates/header.php'; ?>
+<body>
 		<h1>Formulario para registro de usuarios</h1>
 		<form id="formulario">
 			<label>Nombre de usuario: </label>
@@ -28,5 +20,4 @@
 
 			<button type="submit" id="enviar">Confirmar</button>
 		</form>
-	</body>
-</html>
+<?php require_once 'templates/footer.php'; ?>
