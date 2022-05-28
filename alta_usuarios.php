@@ -14,9 +14,9 @@
 
 						$sql = "SELECT * FROM bdrecords.usuarios WHERE username = '$username';";
 						$result = pg_query($con,$sql);
-						if($result){
+						if(!empty(pg_fetch_all($result, PGSQL_ASSOC))){
 
-							var_dump($result);
+							var_dump(empty(pg_fetch_all($result, PGSQL_ASSOC)));
 							echo 'Ya existe ese nombre de usuario, prueba con otro';
 						}else{
 
