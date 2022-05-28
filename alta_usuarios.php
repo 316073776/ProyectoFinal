@@ -16,7 +16,6 @@
 						$result = pg_query($con,$sql);
 						if(!empty(pg_fetch_all($result, PGSQL_ASSOC))){
 
-							var_dump(empty(pg_fetch_all($result, PGSQL_ASSOC)));
 							echo 'Ya existe ese nombre de usuario, prueba con otro';
 						}else{
 
