@@ -16,6 +16,7 @@
 						$result = pg_query($con,$sql);
 						if($result){
 
+							var_dump($result);
 							echo 'Ya existe ese nombre de usuario, prueba con otro';
 						}else{
 
