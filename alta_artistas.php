@@ -7,10 +7,10 @@
 	$nombre_artistico = strip_tags($_POST['nombre_artistico']);
 
 
-	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
-		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $apellido)){
-                        if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais_nacimiento)){
-				if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre_artistico)){
+	if(preg_match('/[A-Z a-z áéíóúñ]{2,50}/i', $nombre)){
+		if(preg_match('/[A-Z a-z áéíóúñ]{2,50}/i', $apellido)){
+                        if(preg_match('/[A-Z a-z áéíóúñ]{2,50}/i', $pais_nacimiento)){
+				if(preg_match('/[A-Z a-z áéíóúñ]{2,50}/i', $nombre_artistico)){
                         		$insercion= "insert into bdrecords.artistas(nombre,apellido,pais_nacimiento,fecha_nacimiento,nombre_artistico) values('$nombre','$apellido','$pais_nacimiento','$fecha_nacimiento','$nombre_artistico')";
         				$query = pg_query($con,$insercion);
         				if($query){
