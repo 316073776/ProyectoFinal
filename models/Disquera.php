@@ -56,4 +56,20 @@ class Disquera{
 
         return $disqueras;
     }
+
+    public function guardar(){
+
+        $insercion= "insert into bdrecords.disqueras(nombre,pais) values('{$this->getNombre()}','{$this->getPais()}')";
+
+        $query = pg_query($this->db, $insercion);
+
+        if($query){
+
+                return "Se ha almacenado en la base de datos de forma correcta";
+
+        } else {
+
+                return "No se ha podido almacenar en la base de datos";
+        }
+    }
 }
