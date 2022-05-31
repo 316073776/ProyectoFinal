@@ -6,8 +6,8 @@ $(document).ready(function(){
 				titulo: $("#titulo").val(),
 			},
 			function(data, status){
-				alert("Status:"+status);
-				$("#formulario").trigger("reset");
+				alert(data);
+				$("#formularioCanciones").trigger("reset");
 			});
 		},
 

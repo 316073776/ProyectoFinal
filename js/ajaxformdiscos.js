@@ -12,8 +12,8 @@ $(document).ready(function(){
 				costo: $("#costo").val(),
 			},
 			function(data, status){
-				alert("Status:"+status);
-				$("#formulario").trigger("reset");
+				alert(data);
+				$("#formularioDiscos").trigger("reset");
 			});
 		},
 

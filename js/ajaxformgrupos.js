@@ -7,8 +7,8 @@ $(document).ready(function(){
 				pais_origen: $("#pais_origen").val(),
 			},
 			function(data, status){
-				alert("Status:"+status);
-				$("#formulario").trigger("reset");
+				alert(data);
+				$("#formularioGrupos").trigger("reset");
 			});
 		},
 
