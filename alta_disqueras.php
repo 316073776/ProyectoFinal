@@ -6,7 +6,7 @@
 
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
 		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais)){
-                        $insercion= "insert into bdrecords.disqueras(nombre,pais) values('$nombre','$pais')";
+                        $insercion= "insert into disqueras(nombre,pais) values('$nombre','$pais')";
         		$query = pg_query($con,$insercion);
         		if($query){
                 		echo "Se ha almacenado en la base de datos de forma correcta  ";
