@@ -9,7 +9,7 @@ $(document).ready(function(){
 			function(data, status){
 				$("#formulario").trigger("reset");
 				if(data == "1"){
-					console.log('Exito');
+					window.location.href = "index.php";
 				}else{
 					alert(data);
 				}

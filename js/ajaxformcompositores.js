@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioCompositores').validate({
 		submitHandler: function(){
 		$.post("alta_compositores.php",
 			{
@@ -9,8 +9,8 @@ $(document).ready(function(){
 				fecha_nacimiento: $("#fecha_nacimiento").val(),
 			},
 			function(data, status){
-				alert("Status:"+status);
-				$("#formulario").trigger("reset");
+				alert(data);
+				$("#formularioCompositores").trigger("reset");
 			});
 		},
 

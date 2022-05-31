@@ -1,13 +1,13 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioCanciones').validate({
 		submitHandler: function(){
 		$.post("alta_canciones.php",
 			{
 				titulo: $("#titulo").val(),
 			},
 			function(data, status){
-				alert("Status:"+status);
-				$("#formulario").trigger("reset");
+				alert(data);
+				$("#formularioCanciones").trigger("reset");
 			});
 		},
 
