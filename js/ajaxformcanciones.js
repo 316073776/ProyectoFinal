@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioCanciones').validate({
 		submitHandler: function(){
 		$.post("alta_canciones.php",
 			{

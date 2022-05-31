@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioGrupos').validate({
 		submitHandler: function(){
 		$.post("alta_grupos.php",
 			{

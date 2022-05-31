@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioUsuarios').validate({
 		submitHandler: function(){
 		$.post("alta_usuarios.php",
 			{

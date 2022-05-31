@@ -20,7 +20,7 @@
 						}else{
 
 							$contrasena = password_hash($contrasena, PASSWORD_DEFAULT);
-							$insercion= "insert into usuarios(nombre,username,apaterno,amaterno,contrasena) values('$nombre','$username','$apaterno','$amaterno','$contrasena')";
+							$insercion= "insert into bdrecords.usuarios(nombre,username,apaterno,amaterno,contrasena) values('$nombre','$username','$apaterno','$amaterno','$contrasena')";
 							$query = pg_query($con,$insercion);
 							if($query){
 									echo true;

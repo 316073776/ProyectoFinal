@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioCompositores').validate({
 		submitHandler: function(){
 		$.post("alta_compositores.php",
 			{

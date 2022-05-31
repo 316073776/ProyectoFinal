@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioProductores').validate({
 		submitHandler: function(){
 		$.post("alta_productores.php",
 			{

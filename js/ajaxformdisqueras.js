@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioDisqueras').validate({
 		submitHandler: function(){
 		$.post("alta_disqueras.php",
 			{
