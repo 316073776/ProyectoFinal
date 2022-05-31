@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	if(isset($_SESSION) && isset($_SESSION['usuario'])){
-		header("Location: form_artistas.php");
+		header("Location: catalogo_discos.php");
 	}
 ?>
 <?php require_once 'templates/header.php'; ?>
