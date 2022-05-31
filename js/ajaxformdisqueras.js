@@ -4,7 +4,7 @@ $(document).ready(function(){
 		$.post("alta_disqueras.php",
 			{
 				nombre: $("#nombre").val(),
-				pais_origen: $("#pais").val(),
+				pais: $("#pais").val(),
 			},
 			function(data, status){
 				alert("Status:"+status);
@@ -21,7 +21,7 @@ $(document).ready(function(){
 			pais: {
                                 required: true,
 				minlength: 2,
-				maxlength: 50,
+				maxlength: 50
                         }
 		},
 

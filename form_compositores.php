@@ -6,6 +6,9 @@
 	}
 ?>
 <body>
+                <script src="js/jquery-3.6.0.js"></script>
+                <script src="js/ajaxformcompositores.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 		<?php require_once 'templates/menu.php'; ?>
 		<div class="flex flex-col justify-center items-center mt-5 mb-5">
 			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
