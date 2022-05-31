@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioUsuarios').validate({
 		submitHandler: function(){
 		$.post("alta_usuarios.php",
 			{
@@ -10,7 +10,7 @@ $(document).ready(function(){
 				contrasena: $("#contrasena").val(),
 			},
 			function(data, status){
-				$("#formulario").trigger("reset");
+				$("#formularioUsuarios").trigger("reset");
 				if(data == "1"){
 					window.location.href = "index.php";
 				}else{

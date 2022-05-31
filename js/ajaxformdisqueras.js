@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioDisqueras').validate({
 		submitHandler: function(){
 		$.post("alta_disqueras.php",
 			{
@@ -7,8 +7,8 @@ $(document).ready(function(){
 				pais: $("#pais").val(),
 			},
 			function(data, status){
-				alert("Status:"+status);
-				$("#formulario").trigger("reset");
+				alert(data);
+				$("#formularioDisqueras").trigger("reset");
 			});
 		},
 

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioProductores').validate({
 		submitHandler: function(){
 		$.post("alta_productores.php",
 			{
@@ -8,8 +8,8 @@ $(document).ready(function(){
 				fecha_nacimiento: $("#fecha_nacimiento").val(),
 			},
 			function(data, status){
-				alert("Status:"+status);
-				$("#formulario").trigger("reset");
+				alert(data);
+				$("#formularioProductores").trigger("reset");
 			});
 		},
 

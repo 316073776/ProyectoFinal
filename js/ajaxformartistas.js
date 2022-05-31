@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#formulario').validate({
+	$('#formularioArtistas').validate({
 		submitHandler: function(){
 		$.post("alta_artistas.php",
 			{
@@ -10,8 +10,8 @@ $(document).ready(function(){
 				nombre_artistico: $("#nombre_artistico").val(),
 			},
 			function(data, status){
-				alert("Status:"+status);
-				$("#formulario").trigger("reset");
+				alert(data);
+				$("#formularioArtistas").trigger("reset");
 			});
 		},
 
