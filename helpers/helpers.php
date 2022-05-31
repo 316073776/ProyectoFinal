@@ -1,11 +1,10 @@
 <?php
 
-function isUser(){
+class Helpers{
 
 
-    session_start();
+    public static function isUser(){
 
-    $isUser = $_SESSION['usuario'];
-
-    return $isUser;
+        if(!isset($_SESSION['usuario'])) header('Location:'. URL);
+    }
 }

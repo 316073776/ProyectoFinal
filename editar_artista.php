@@ -1,14 +1,18 @@
-<?php require_once 'templates/header.php'; ?>
 <?php 
-	if(!isUser()){
+    
+	if(!isUser()) header('Location: index.php');
+	
+    $artistaAct = conseguirArtista($_GET['artista_id']); 
+    
+    if(!$artistaAct){
 
-		header('Location: index.php');
-	}
+        header('Location: index.php');
+    }
+
+
 ?>
+<?php require_once 'templates/header.php'; ?>
 	<body>
-		<script src="js/jquery-3.6.0.js"></script>
-                <script src="js/ajaxformartistas.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 		<?php require_once 'templates/menu.php'; ?>
 		 <div class="flex flex-col justify-center items-center mt-5 mb-5">
 			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
@@ -16,7 +20,7 @@
 				<form id="formularioArtistas">
 					<div class="w-full flex flex-col mb-5">
 						<label for="nombre" class="text-gray-700 uppercase font-bold">Nombre: </label>
-						<input type="text" name="nombre" id="nombre" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
+						<input type="text" name="nombre" id="nombre" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $artistaAct['nombre']; ?>">
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="apellido" class="text-gray-700 uppercase font-bold">Apellido: </label>
