@@ -5,7 +5,7 @@
 
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $username)){
         	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $contrasena)){
-			$sql = "SELECT * FROM usuarios WHERE username = '$username';";
+			$sql = "SELECT * FROM bdrecords.usuarios WHERE username = '$username';";
 			$result = pg_query($con, $sql);
 			if($result){
 				$user = pg_fetch_all($result, PGSQL_ASSOC);

@@ -20,7 +20,7 @@ CREATE TABLE usuarios(
 	contrasena VARCHAR(60) NOT NULL,
 
 	CONSTRAINT uq_username
-	UNIQUE (username);
+	UNIQUE (username)
 );
 
 CREATE TABLE artistas(

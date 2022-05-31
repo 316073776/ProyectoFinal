@@ -9,7 +9,7 @@
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
 		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $apellido)){
                         if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais_nacimiento)){
-                        	$insercion= "insert into compositores(nombre,apellido,pais_nacimiento,fecha_nacimiento) values('$nombre','$apellido','$pais_nacimiento','$fecha_nacimiento')";
+                        	$insercion= "insert into bdrecords.compositores(nombre,apellido,pais_nacimiento,fecha_nacimiento) values('$nombre','$apellido','$pais_nacimiento','$fecha_nacimiento')";
         			$query = pg_query($con,$insercion);
         			if($query){
                 			echo "Se ha almacenado en la base de datos de forma correcta  ";
