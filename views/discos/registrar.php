@@ -1,15 +1,5 @@
-<?php require_once 'templates/header.php'; ?>  
-<?php 
-	if(!isUser()){
-
-		header('Location: index.php');
-	}
-?>
-   <body>
-                <script src="js/jquery-3.6.0.js"></script>
-                <script src="js/ajaxformdiscos.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-   		<?php require_once 'templates/menu.php'; ?>
+<body>
+   		<?php require_once 'views/templates/menu.php'; ?>
 		<div class="flex flex-col justify-center items-center mt-5 mb-5">
 			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
 				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para registro de discos</h1>
@@ -20,7 +10,11 @@
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="grupo_id" class="text-gray-700 uppercase font-bold">Grupo ID: </label>
-						<input type="number" name="grupo_id" id="grupo_id" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
+						<select name="grupo_id">
+                            <?php foreach ($grupos as $grupo) : ?>
+                                <option value="<?php echo $categoria['Grupo_id'] ?>"><?php echo $grupo['Nombre'] ?></option>
+                            <?php endforeach; ?>
+                        </select>
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="anio" class="text-gray-700 uppercase font-bold">Año: </label>
@@ -32,11 +26,19 @@
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="disquera_id" class="text-gray-700 uppercase font-bold">Disquera ID: </label>
-						<input type="number" name="disquera_id" id="disquera_id" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
+						<select name="disquera_id">
+                            <?php foreach ($disqueras as $disquera) : ?>
+                                <option value="<?php echo $disquera['Disquera_id'] ?>"><?php echo $disquera['Nombre'] ?></option>
+                            <?php endforeach; ?>
+                        </select>
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="productor_id" class="text-gray-700 uppercase font-bold">Productor ID: </label>
-						<input type="number" name="productor_id" id="productor_id" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
+						<select name="productor_id">
+                            <?php foreach ($productores as $productor) : ?>
+                                <option value="<?php echo $productor['Productor_id'] ?>"><?php echo $productor['Nombre'] ?></option>
+                            <?php endforeach; ?>
+                        </select>
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="costo" class="text-gray-700 uppercase font-bold">Costo: </label>
@@ -47,4 +49,3 @@
 				</form>
 			</div>
 		</div>
-		<?php require_once 'templates/footer.php'; ?>

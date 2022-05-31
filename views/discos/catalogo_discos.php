@@ -1,6 +1,6 @@
 <body>
 
-    <?php require_once 'templates/menu.php'; ?>
+    <?php require_once 'views/templates/menu.php'; ?>
       <div class="flex flex-col justify-center items-center mt-5 mb-5">
         <div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-4">
           <h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Catálogo de discos</h1>
@@ -29,4 +29,3 @@
           </table>
         </div>
       </div>
-  <?php require_once 'templates/footer.php'; ?>

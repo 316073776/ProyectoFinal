@@ -79,4 +79,12 @@ class Productor{
                 return "No se ha podido almacenar en la base de datos";
         }
     }
+
+    public function obtenerTodos(){
+
+        $sql = "SELECT * FROM bdrecords.productores";
+        $productores = pg_query($this->db, $sql);
+
+        return $productores;
+    }
 }
