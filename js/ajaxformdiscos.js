@@ -4,12 +4,12 @@ $(document).ready(function(){
 		$.post("alta_discos.php",
 			{
 				titulo: $("#titulo").val(),
-				grupo: $("#grupo_id").val(),
-				año: $("#año").val(),
+				grupo_id: $("#grupo_id").val(),
+				anio: $("#anio").val(),
 				genero: $("#genero").val(),
-				disquera: $("#disquera_id").val(),
-				productor: $("#productor_id").val(),
-				costo: $("#costo").val()
+				disquera_id: $("#disquera_id").val(),
+				productor_id: $("#productor_id").val(),
+				costo: $("#costo").val(),
 			},
 			function(data, status){
 				alert("Status:"+status);
@@ -28,8 +28,8 @@ $(document).ready(function(){
                                 minlength: 1,
                                 maxlength: 10
                         },
-			año: {
-                                required: true,
+			anio: {
+                                required: true
                         },
 			genero: {
                                 required: true,
@@ -65,8 +65,8 @@ $(document).ready(function(){
                                 minlenght: "Grupo debe tener minimo 1 numero",
                                 maxlenght: "Grupo Paterno tener maximo 10 numeros"
                         },
-			año: {
-                                required: "Campo obligatorio",
+			anio: {
+                                required: "Campo obligatorio"
                         },
 			genero: {
                                 required: "Campo obligatorio",

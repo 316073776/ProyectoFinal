@@ -1,5 +1,8 @@
 <?php require_once 'templates/header.php'; ?>
 <body class="flex flex-col justify-center items-center">
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/ajaxformusuarios.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 	<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5 mt-5 mb-5">
 		<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para registro de usuarios</h1>
 		<form id="formulario">

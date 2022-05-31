@@ -3,7 +3,7 @@ $(document).ready(function(){
 		submitHandler: function(){
 		$.post("alta_canciones.php",
 			{
-				nombre: $("#titulo").val(),
+				titulo: $("#titulo").val(),
 			},
 			function(data, status){
 				alert("Status:"+status);
