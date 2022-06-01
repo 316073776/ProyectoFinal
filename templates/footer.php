@@ -11,5 +11,6 @@
 		<script src="js/ajaxformcanciones.js"></script>
 		<script src="js/ajaxformartistas.js"></script>
 		<script src="../js/ajaxformdiscosAct.js"></script>
+		<script src="../js/ajaxformartistasAct.js"></script>
     </body>
 </html>
