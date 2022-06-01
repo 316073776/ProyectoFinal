@@ -1,4 +1,6 @@
 <?php 
+    require_once 'helpers/helpers.php';
+    
 	if(!isUser()) header('Location: index.php');
 
     if(isset($_GET['disco_id'])){
