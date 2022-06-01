@@ -19,7 +19,7 @@
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="grupo_id" class="text-gray-700 uppercase font-bold">Grupo ID: </label>
-						<select name="grupo_id">
+						<select name="grupo_id" id="grupo_id">
                             <?php foreach ($grupos as $grupo) : ?>
                                 <option value="<?php echo $categoria['grupo_id'] ?>"><?php echo $grupo['nombre'] ?></option>
                             <?php endforeach; ?>
@@ -35,7 +35,7 @@
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="disquera_id" class="text-gray-700 uppercase font-bold">Disquera ID: </label>
-						<select name="disquera_id">
+						<select name="disquera_id" id="disquera_id">
                             <?php foreach ($disqueras as $disquera) : ?>
                                 <option value="<?php echo $disquera['disquera_id'] ?>"><?php echo $disquera['nombre'] ?></option>
                             <?php endforeach; ?>
@@ -43,7 +43,7 @@
 					</div>
 					<div class="w-full flex flex-col mb-5">
 						<label for="productor_id" class="text-gray-700 uppercase font-bold">Productor ID: </label>
-						<select name="productor_id">
+						<select name="productor_id" id="productor_id">
                             <?php foreach ($productores as $productor) : ?>
                                 <option value="<?php echo $productor['productor_id'] ?>"><?php echo $productor['nombre'] ?></option>
                             <?php endforeach; ?>
