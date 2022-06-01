@@ -10,7 +10,7 @@
   <body>
     <?php
                 include 'conexion.php';
-                $query = "Select disco_id, titulo, año, genero, costo from bdrecords.discos";
+                $query = "Select disco_id, titulo, grupo_id, año, genero, costo from bdrecords.discos";
                 $ejecucion = pg_query($con,$query);
     ?>
     <?php require_once 'templates/menu.php'; ?>

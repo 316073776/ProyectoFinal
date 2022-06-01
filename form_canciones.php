@@ -12,7 +12,7 @@
 		<?php require_once 'templates/menu.php'; ?>
 		<div class="flex flex-col justify-center items-center mt-5 mb-5">
 			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
-				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para registro de artistas</h1>
+				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para registro de canciones</h1>
 				<form id="formularioCanciones">
 					<div class="w-full flex flex-col mb-5">
 						<label for="titulo" class="text-gray-700 uppercase font-bold">Titulo: </label>

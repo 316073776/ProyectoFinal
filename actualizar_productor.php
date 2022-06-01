@@ -1,14 +1,15 @@
 <?php
 	include 'conexion.php';
-	$grupo_id = strip_tags($_POST['disquera_id']);
+	$productor_id = strip_tags($_POST['productor_id']);
 	$nombre = strip_tags($_POST['nombre']);
-	$pais = strip_tags($_POST['pais']);
+	$apellido = strip_tags($_POST['apellido']);
+	$fecha_nacimiento = strip_tags($_POST['fecha_nacimiento']);
 
-	if(is_numeric($disquera_id)){
+	if(is_numeric($productor_id)){
         if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
-                if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais)){
+                if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $apellido)){
 
-                                $sql = "UPDATE bdrecords.disqueras SET nombre = '$nombre', pais = '$pais' WHERE disquera_id = $disquera_id;";
+                                $sql = "UPDATE bdrecords.productores SET nombre = '$nombre', apellido = '$apellido', fecha_nacimiento = '$fecha_nacimiento' WHERE productor_id = $productor_id;";
 
                                 $result = pg_query($con, $sql);
 

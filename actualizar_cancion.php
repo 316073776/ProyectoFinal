@@ -1,14 +1,14 @@
 <?php
 	include 'conexion.php';
-	$grupo_id = strip_tags($_POST['disquera_id']);
-	$nombre = strip_tags($_POST['nombre']);
-	$pais = strip_tags($_POST['pais']);
+	$cancion_id = strip_tags($_POST['cancion_id']);
+	$titulo = strip_tags($_POST['titulo']);
 
-	if(is_numeric($disquera_id)){
-        if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
-                if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais)){
 
-                                $sql = "UPDATE bdrecords.disqueras SET nombre = '$nombre', pais = '$pais' WHERE disquera_id = $disquera_id;";
+	if(is_numeric($cancion_id)){
+        if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $titulo)){
+
+
+                                $sql = "UPDATE bdrecords.canciones SET titulo = '$titulo', apellido = '$apellido', pais_nacimiento = '$pais_nacimiento', fecha_nacimiento = '$fecha_nacimiento' WHERE cancion_id = $cancion_id;";
 
                                 $result = pg_query($con, $sql);
 
@@ -33,9 +33,4 @@
     
                             echo "  Los datos no son validos";
                         }
-                        
-                    }else{
-    
-                        echo "  Los datos no son validos";
-                    }
 ?>
