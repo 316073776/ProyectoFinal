@@ -1,5 +1,6 @@
 <?php
 	include 'conexion.php';
+    $artista_id = strip_tags($_POST['artista_id']);
 	$nombre = strip_tags($_POST['nombre']);
 	$apellido = strip_tags($_POST['apellido']);
 	$pais_nacimiento = strip_tags($_POST['pais_nacimiento']);

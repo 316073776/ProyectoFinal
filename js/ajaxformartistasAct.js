@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioArtistaActualizar').validate({
 		submitHandler: function(){
-		$.post("editar_artistas.php",
+		$.post("actualizar_artista.php",
 			{
                 artista_id: $('#artista_id').val(),
 				nombre: $("#nombre").val(),
