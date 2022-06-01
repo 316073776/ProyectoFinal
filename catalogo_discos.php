@@ -24,8 +24,8 @@
           <table class="neumorphic">
             <thead>
               <tr>
-                <th>Disco</th>
-                <th>Grupo</th>
+		<th>ID</th>
+                <th>Titulo</th>
 		<th>Año</th>
 		<th>Genero</th>
 		<th>Costo</th>
