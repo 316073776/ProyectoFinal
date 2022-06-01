@@ -5,7 +5,12 @@ function isUser(){
 
     session_start();
 
-    $isUser = $_SESSION['usuario'];
+    if(isset($_SESSION['usuario'])){
 
-    return $isUser;
+        $isUser = $_SESSION['usuario'];
+
+        return $isUser;
+    }
+    
+    return null;
 }
