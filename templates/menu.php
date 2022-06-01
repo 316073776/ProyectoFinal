@@ -8,6 +8,6 @@
 				<li tabindex="0"></i><a href="../catalogo_disqueras.php">Disqueras</a></li>
 				<li tabindex="0"><a href="../catalogo_grupos.php">Grupos</a></li>
 				<li tabindex="0"><a href="../catalogo_productores.php">Productores</a></li>
-				<li tabindex="0"><a href="../logout.php">Cerrar sesión</a></li>
+				<li tabindex="0"><i class="bi bi-door-open-fill"></i><a href="../logout.php">Cerrar sesión</a></li>
 			<?php endif; ?>
 </ul>
