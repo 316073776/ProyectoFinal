@@ -15,9 +15,9 @@
     ?>
     <?php require_once 'templates/menu.php'; ?>
       <div class="flex flex-col justify-center items-center mt-5 mb-5">
-        <div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-4">
+        <div class="rounded shadow-lg overflow-hidden flex flex-col p-4">
           <h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Catálogo de discos</h1>
-          <button id="agregar" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Agregar disco</button>
+          <a href="form_discos.php" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white text-center uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Agregar disco</a>
 
           </br>
           </br>
@@ -26,6 +26,9 @@
               <tr>
                 <th>Disco</th>
                 <th>Grupo</th>
+		<th>Año</th>
+		<th>Genero</th>
+		<th>Costo</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>

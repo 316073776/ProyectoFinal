@@ -186,7 +186,7 @@ input {
 }
 
 table.neumorphic{
-  width: 600px;
+  width: 100%;
   border-spacing: 0;
   color: #212121;
   text-align: center;
