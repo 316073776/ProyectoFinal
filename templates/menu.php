@@ -1,3 +1,4 @@
+<?php require_once 'helpers/helpers.php'; ?>
 <ul class="nav">
 			<li tabindex="0" class="active"><i class="bi bi-house-fill"></i><a href="../catalogo_discos.php">Inicio</a></li>
 			<li tabindex="0"><i class="bi bi-people-fill"></i><a href="../creditos.php">Créditos</a></li>
