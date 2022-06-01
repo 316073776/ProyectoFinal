@@ -31,7 +31,6 @@
               </tr>
             </thead>
             <tbody>
-              <!--Hacer un ciclo for para la tabla-->
               <tr>
 		<?php
 
