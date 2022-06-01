@@ -5,7 +5,7 @@
 	$productores = obtenerProductores();
 	$disqueras = obtenerDisqueras();
 	$grupos = obtenerGrupos();
-	
+
 ?>
    <body>
    		<?php require_once 'templates/menu.php'; ?>
@@ -21,7 +21,7 @@
 						<label for="grupo_id" class="text-gray-700 uppercase font-bold">Grupo ID: </label>
 						<select name="grupo_id">
                             <?php foreach ($grupos as $grupo) : ?>
-                                <option value="<?php echo $categoria['Grupo_id'] ?>"><?php echo $grupo['Nombre'] ?></option>
+                                <option value="<?php echo $categoria['grupo_id'] ?>"><?php echo $grupo['nombre'] ?></option>
                             <?php endforeach; ?>
                         </select>
 					</div>
@@ -37,7 +37,7 @@
 						<label for="disquera_id" class="text-gray-700 uppercase font-bold">Disquera ID: </label>
 						<select name="disquera_id">
                             <?php foreach ($disqueras as $disquera) : ?>
-                                <option value="<?php echo $disquera['Disquera_id'] ?>"><?php echo $disquera['Nombre'] ?></option>
+                                <option value="<?php echo $disquera['disquera_id'] ?>"><?php echo $disquera['nombre'] ?></option>
                             <?php endforeach; ?>
                         </select>
 					</div>
@@ -45,7 +45,7 @@
 						<label for="productor_id" class="text-gray-700 uppercase font-bold">Productor ID: </label>
 						<select name="productor_id">
                             <?php foreach ($productores as $productor) : ?>
-                                <option value="<?php echo $productor['Productor_id'] ?>"><?php echo $productor['Nombre'] ?></option>
+                                <option value="<?php echo $productor['productor_id'] ?>"><?php echo $productor['nombre'] ?></option>
                             <?php endforeach; ?>
                         </select>
 					</div>
