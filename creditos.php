@@ -17,12 +17,7 @@
     </head>
 
     <body>
-
-      <ul class="nav">
-        <li tabindex="0"><i class="bi bi-house-fill"></i> Inicio </li>
-        <li tabindex="0" class="active"><i class="bi bi-people-fill"></i>Créditos</li>
-        <li tabindex="0"><i class="bi bi-door-open-fill"></i>Cerrar sesión</li>
-      </ul>
+      <?php require_once 'templates/menu.php'; ?>
       <section class="our-webcoderskull padding-lg">
         <div class="container">
           <div class="row heading heading-icon">
