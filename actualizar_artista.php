@@ -13,7 +13,7 @@
                 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais_nacimiento)){
                 		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre_artistico)){
 
-                                $sql = "UPDATE bdrecords.artistas SET nombre = '$nombre', apellido = '$apellido', pais_nacimiento = '$pais_nacimiento', fecha_nacimiento = $fecha_nacimiento, nombre_artistico = '$nombre_artistico' WHERE artista_id = $artista_id;";
+                                $sql = "UPDATE bdrecords.artistas SET nombre = '$nombre', apellido = '$apellido', pais_nacimiento = '$pais_nacimiento', fecha_nacimiento = '$fecha_nacimiento', nombre_artistico = '$nombre_artistico' WHERE artista_id = $artista_id;";
 
                                 $result = pg_query($con, $sql);
 
