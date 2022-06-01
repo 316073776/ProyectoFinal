@@ -1,13 +1,15 @@
 <?php require_once 'templates/header.php'; ?>
 <body class="flex flex-col justify-center items-center">
+	
 	<script src="js/jquery-3.6.0.js"></script>
-        <script src="js/ajaxformusuarios.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="js/ajaxformusuarios.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 	
 	<div class="container-forms flex flex-col p-5 mt-5 mb-5">
 		<div class="brand-title">REGISTRAR USUARIO</div>
+		<div class="inputs">
 			<form id="formularioUsuarios" autocomplete="off">
-				
+			
 				<label for="username" class="uppercase">Nombre de usuario: </label>
 				<input type="text" name="username" id="username" placeholder="Usuario">
 			
@@ -24,9 +26,10 @@
 				<input type="password" name="contrasena" id="contrasena"  placeholder="Contraseña">
 
 				<button class="mb-5" type="submit" id="enviar">REGISTRAR</button>
-				
-			</form>
-			<a href="./index.php">REGRESAR</a>
-		</div>
+			
+		</form>
+		<a href="./index.php">REGRESAR</a>
+
+		</div>		
 	</div>
 </body>

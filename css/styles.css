@@ -18,10 +18,9 @@ body {
   background-color: var(--blanco-principal);
 }
 
-
 .nav {
   width: 100vw;
-  height: 300px;
+  height: 100px;
   background-color: var(--blanco-principal);
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
   border-radius: 0 0 10px 10px;
@@ -85,8 +84,18 @@ input {
 
 .container-login {
   position: relative;
-  width: 350px;
-  height: 500px;
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: var(--blanco-principal);
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.container-forms {
+  position: relative;
+  width: 600px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
@@ -108,6 +117,7 @@ input {
   margin-top: 10px;
   font-weight: 900;
   font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
   color: var(--celadon-blue);
   letter-spacing: 1px;
   text-align: center;
@@ -116,6 +126,7 @@ input {
 .inputs {
   text-align: left;
   margin-top: 30px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .inputs label, .inputs input, .inputs button {
@@ -129,10 +140,8 @@ input {
 
 .inputs label {
   margin-bottom: 4px;
-}
-
-.inputs label:nth-of-type(2) {
-  margin-top: 12px;
+  margin-top: 15px;
+  color: var(--celadon-blue);
 }
 
 .inputs input::placeholder {
@@ -163,14 +172,27 @@ input {
 
 .inputs button:hover {
   box-shadow: none;
+  background: var(--prussian-blue);
 }
 
-.button-reg {
+a {
+  float: right;
+  box-shadow: inset 0 0 0 0 var(--prussian-blue);
+  color: var(--celadon-blue);
+  padding: 5px;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-  padding: 10px;
-  margin-top: 20px;
+  font-weight: 900;
   text-decoration: none;
-  color: var(--prussian-blue);
+  border-radius: 20px;
+}
+
+a:hover {
+  color: var(--blanco-principal);
+  box-shadow: inset 200px 0 0 0 var(--prussian-blue);
+  border-radius: 20px;
 }
 
 .credits{
@@ -183,6 +205,8 @@ input {
   background: var(--powder-blue);
   border-radius: 10px;
   padding: 2px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 table.neumorphic{
@@ -208,7 +232,6 @@ table.neumorphic>tbody>tr>td {
   font-size: 14px;
   position: relative;
 }
-
 
 table.neumorphic>tbody>tr:hover {
   padding: 20px;
