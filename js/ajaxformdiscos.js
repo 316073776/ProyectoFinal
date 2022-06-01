@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioDiscos').validate({
 		submitHandler: function(){
-		$.post("http://www.final.unam.mx/Disco/guardar",
+		$.post("alta_discos.php",
 			{
 				titulo: $("#titulo").val(),
 				grupo_id: $("#grupo_id").val(),
