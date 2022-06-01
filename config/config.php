@@ -6,6 +6,6 @@ define('DBPASS', 'discos_dbrecords');
 define('DBPORT', 5432);
 define('CONTROLLER_DEFAULT', 'UsuarioController');
 define('ACTION_DEFAULT', 'index');
-define('URL', 'http://localhost/ProyectoFinal/');
+define('URL', 'http://www.final.unam.mx/');
 
 session_start();
