@@ -22,25 +22,28 @@ class DisqueraController{
 
         Helpers::isUser();
 
-        $nombre = strip_tags($_POST['nombre']);
-        $pais = strip_tags($_POST['pais']);
+        if(isset($_POST)){
+
+            $nombre = strip_tags($_POST['nombre']);
+            $pais = strip_tags($_POST['pais']);
 
 
-        if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
+            if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
 
-            if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais)){
-                     
-                $disquera = new Disquera();
-                $disquera->setNombre($nombre);
-                $disquera->setPais($pais);
-                $msg = $disquera->guardar();
+                if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $pais)){
+                        
+                    $disquera = new Disquera();
+                    $disquera->setNombre($nombre);
+                    $disquera->setPais($pais);
+                    $msg = $disquera->guardar();
 
-                echo $msg;
+                    echo $msg;
 
+                }
+
+            }else {
+                echo "  Los datos no son validos  ";
             }
-
-        }else {
-            echo "  Los datos no son validos  ";
         }
     }
 }
