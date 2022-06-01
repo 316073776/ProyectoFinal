@@ -111,7 +111,7 @@ class Usuario{
 
     public function guardar(){
 
-        $sql = "SELECT * FROM bdrecords.usuarios WHERE username = '{$this->getNombre()}';";
+        $sql = "SELECT * FROM bdrecords.usuarios WHERE username = '{$this->getUsername()}';";
 
         $result = pg_query($this->db, $sql);
         
@@ -121,7 +121,7 @@ class Usuario{
 
         }else{
                                
-            $insercion= "insert into bdrecords.usuarios(nombre,username,apaterno,amaterno,contrasena) values('{$this->getNombre()}','{$this->getUsername()}','{$this->getApaterno()}','{$this->getAmaterno()}','{$this->getContrasena()}')";
+            $insercion= "insert into bdrecords.usuarios(username,nombre,apaterno,amaterno,contrasena) values('{$this->getUsername()}','{$this->getNombre()}','{$this->getApaterno()}','{$this->getAmaterno()}','{$this->getContrasena()}')";
                                     
             $query = pg_query($this->db, $insercion);
                                     
