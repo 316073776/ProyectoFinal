@@ -6,8 +6,7 @@
     header('Location: index.php');
   }
 ?>
-
-  <body>
+<body>
     <?php
                 include 'conexion.php';
                 $query = "Select disco_id, titulo, año, genero, costo from bdrecords.discos";
@@ -57,5 +56,5 @@
           </table>
         </div>
       </div>
-    </body>
-  <?php require_once 'templates/footer.php'; ?>
+</body>
+<?php require_once 'templates/footer.php'; ?>
