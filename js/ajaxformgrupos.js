@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioGrupos').validate({
 		submitHandler: function(){
-		$.post("alta_grupos.php",
+		$.post("http://www.final.unam.mx/Grupo/guardar",
 			{
 				nombre: $("#nombre").val(),
 				pais_origen: $("#pais_origen").val(),

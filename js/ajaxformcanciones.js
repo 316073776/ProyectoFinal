@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioCanciones').validate({
 		submitHandler: function(){
-		$.post("alta_canciones.php",
+		$.post("http://www.final.unam.mx/Cancion/guardar",
 			{
 				titulo: $("#titulo").val(),
 			},

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioUsuarios').validate({
 		submitHandler: function(){
-		$.post("alta_usuarios.php",
+		$.post("http://www.final.unam.mx/Usuario/guardar",
 			{
 				username: $("#username").val(),
 				nombre: $("#nombre").val(),
