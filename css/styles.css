@@ -21,7 +21,7 @@ body {
 
 .nav {
   width: 100vw;
-  height: 100px;
+  height: 300px;
   background-color: var(--blanco-principal);
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
   border-radius: 0 0 10px 10px;
