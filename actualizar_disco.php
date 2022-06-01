@@ -18,7 +18,7 @@
                         if(is_numeric($productor_id)){
                             if(preg_match('/^-?(\d|[1-9]+\d*|\.\d+|0\.\d+|[1-9]+\d*\.\d+){2,7}$/', $costo)){
     
-                                $sql = "UPDATE discos SET titulo = '$titulo', grupo_id = $grupo_id, año = '$anio', genero = '$genero', disquera_id = $disquera_id, productor_id = '$productor_id', costo = $costo WHERE disco_id = $disco_id;";
+                                $sql = "UPDATE bdrecords.discos SET titulo = '$titulo', grupo_id = $grupo_id, año = '$anio', genero = '$genero', disquera_id = $disquera_id, productor_id = '$productor_id', costo = $costo WHERE disco_id = $disco_id;";
 
                                 $result = pg_query($con, $sql);
 
