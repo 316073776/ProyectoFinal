@@ -46,7 +46,7 @@
                                 echo "<td>".$row['costo']."</td>";
 		?>
 				<td class="items-center" style="cursor: pointer;"><a href="editar_discos.php?disco_id=<?php echo $row['disco_id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                		<td class="items-center" style="cursor: pointer;"><a type="button" data-modal-toggle="eliminarModal"><i class="bi bi-trash-fill"></i></a></td><?php require_once 'modalDisco.php'; ?>
+                		<td class="items-center" style="cursor: pointer;"><a href="eliminar_disco.php?disco_id=<?php echo $row['disco_id']; ?>"><i class="bi bi-trash-fill"></i></a></td>
                                         <?php       
 					 echo "</tr>";
 
