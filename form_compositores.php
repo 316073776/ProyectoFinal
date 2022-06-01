@@ -5,34 +5,39 @@
 		header('Location: index.php');
 	}
 ?>
-<body>
-                <script src="js/jquery-3.6.0.js"></script>
-                <script src="js/ajaxformcompositores.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-		<?php require_once 'templates/menu.php'; ?>
-		<div class="flex flex-col justify-center items-center mt-5 mb-5">
-			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
-				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para registro de compositores</h1>
-				<form id="formularioCompositores">
-					<div class="w-full flex flex-col mb-5">
-						<label for="nombre" class="text-gray-700 uppercase font-bold">Nombre: </label>
-						<input type="text" name="nombre" id="nombre" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
-					</div>
-					<div class="w-full flex flex-col mb-5">
-						<label for="apellido" class="text-gray-700 uppercase font-bold">Apellido: </label>
-						<input type="text" name="apellido" id="apellido" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
-					</div>
-					<div class="w-full flex flex-col mb-5">
-						<label for="pais_nacimiento" class="text-gray-700 uppercase font-bold">Pais de nacimiento: </label>
-						<input type="text" name="pais_nacimiento" id="pais_nacimiento" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
-					</div>
-					<div class="w-full flex flex-col mb-5">
-						<label for="fecha_nacimiento" class="text-gray-700 uppercase font-bold">Fecha de nacimiento: </label>
-						<input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md">
-					</div>
 
-					<button type="submit" id="enviar" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Confirmar</button>
+	<body class="flex flex-col justify-center items-center">
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/ajaxformcompositores.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+		<?php require_once 'templates/menu.php'; ?>
+
+		<div class="container-forms flex flex-col p-5 mt-5 mb-5">
+			<div class="brand-title">REGISTRAR COMPOSITOR</div>
+			<div class="inputs">
+				<form id="formularioCompositores">
+					
+					<label for="nombre" class="uppercase">Nombre: </label>
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+					
+					<label for="apellido" class="uppercase">Apellido(s): </label>
+					<input type="text" name="apellido" id="apellido" placeholder="Apellido(s)">
+				
+					<label for="pais_nacimiento" class="uppercase">País de nacimiento: </label>
+					<input type="text" name="pais_nacimiento" id="pais_nacimiento" placeholder="País de nacimiento">
+				
+					<label for="fecha_nacimiento" class="uppercase">Fecha de nacimiento: </label>
+					<input type="date" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="Fecha de nacimiento">
+
+					<button type="submit" id="enviar"">GUARDAR</button>
 				</form>
+
+				<div class="btn">
+					<a class="mt-5" href="./catalogo_compositores.php">REGRESAR</a>
+				</div>
+
 			</div>
 		</div>
-		<?php require_once 'templates/footer.php'; ?>
+	</body>
+</html>

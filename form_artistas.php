@@ -39,7 +39,7 @@
 				</form>
 
 				<div class="btn">
-					<a class="mt-5" href="./index.php">REGRESAR</a>
+					<a class="mt-5" href="./catalogo_artistas.php">REGRESAR</a>
 				</div>
 				
 			</div>		
