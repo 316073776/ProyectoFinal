@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#login-form').validate({
 		submitHandler: function(){
-		$.post("http://www.final.unam.mx/Usuario/login",
+		$.post("peticiones/login.php",
 			{
 				username: $("#username").val(),
 				contrasena: $("#contrasena").val(),
@@ -9,7 +9,7 @@ $(document).ready(function(){
 			function(data, status){
 				$("#formulario").trigger("reset");
 				if(data == "1"){
-					window.location.href = "http://www.final.unam.mx/Disco/index";
+					window.location.href = "index.php";
 				}else{
 					alert(data);
 				}

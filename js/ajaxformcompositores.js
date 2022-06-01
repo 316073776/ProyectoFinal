@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioCompositores').validate({
 		submitHandler: function(){
-		$.post("http://www.final.unam.mx/Compositor/guardar",
+		$.post("alta_compositores.php",
 			{
 				nombre: $("#nombre").val(),
 				apellido: $("#apellido").val(),

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioArtistas').validate({
 		submitHandler: function(){
-		$.post("http://www.final.unam.mx/Artista/guardar",
+		$.post("alta_artistas.php",
 			{
 				nombre: $("#nombre").val(),
 				apellido: $("#apellido").val(),
