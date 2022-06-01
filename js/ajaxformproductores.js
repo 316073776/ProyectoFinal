@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioProductores').validate({
 		submitHandler: function(){
-		$.post("alta_productores.php",
+		$.post("http://www.final.unam.mx/Productor/guardar",
 			{
 				nombre: $("#nombre").val(),
 				apellido: $("#apellido").val(),

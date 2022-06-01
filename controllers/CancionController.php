@@ -6,16 +6,20 @@ class CancionController{
 
     public function index(){
 
+        Helpers::isUser();
         require_once 'views/cancion/catalogo_canciones.php';
         
     }
 
     public function registrar(){
 
+        Helpers::isUser();
         require_once 'views/cancion/registrar.php';
     }
 
     public function guardar(){
+
+        Helpers::isUser();
 
         if(isset($_POST)){
 

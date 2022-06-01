@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#formularioDisqueras').validate({
 		submitHandler: function(){
-		$.post("alta_disqueras.php",
+		$.post("http://www.final.unam.mx/Disquera/guardar",
 			{
 				nombre: $("#nombre").val(),
 				pais: $("#pais").val(),
