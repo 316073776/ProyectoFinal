@@ -26,6 +26,6 @@
 		  </div>
 
 		  <a class="button-reg" href="./form_usuarios.php">Registrate aquí</a>
-		  <a class="credits" href="creditos.html">CRÉDITOS</a>
+		  <a class="credits" href="creditos.php">CRÉDITOS</a>
 		</div>
 <?php require_once 'templates/footer.php'; ?>>
