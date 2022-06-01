@@ -21,7 +21,7 @@
 						<label for="grupo_id" class="text-gray-700 uppercase font-bold">Grupo ID: </label>
 						<select name="grupo_id" id="grupo_id">
                             <?php foreach ($grupos as $grupo) : ?>
-                                <option value="<?php echo $categoria['grupo_id'] ?>"><?php echo $grupo['nombre'] ?></option>
+                                <option value="<?php echo $grupo['grupo_id'] ?>"><?php echo $grupo['nombre'] ?></option>
                             <?php endforeach; ?>
                         </select>
 					</div>

@@ -10,10 +10,10 @@
 
 
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $titulo)){
-		if(preg_match('/^[1-9][0-9]{1,10}$/i', $grupo_id)){
+		if(is_numeric($grupo_id)){
             if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $genero)){
 				if(preg_match('/^[1-9][0-9]{0,10}$/i', $disquera_id)){
-                    if(preg_match('/^[1-9][0-9]{0,10}$/i', $productor_id)){
+                    if(is_numeric($productor_id)){
                         if(preg_match('/^-?(\d|[1-9]+\d*|\.\d+|0\.\d+|[1-9]+\d*\.\d+){2,7}$/', $costo)){
 
                         	$insercion= "insert into bdrecords.discos(titulo,grupo_id,año,genero,disquera_id,productor_id,costo) values('$titulo','$grupo_id','$anio','$genero','$disquera_id','$productor_id','$costo')";
@@ -33,30 +33,30 @@
                 				
 						}else{
 
-							echo "  Los datos no son validos  ";
+							echo "  Los datos no son validos";
 						}
 	                		
 					}else{
 
-						echo "  Los datos no son validos  ";
+						echo "  Los datos no son validos";
 					}
         			
 				}else{
 
-					echo "  Los datos no son validos  ";
+					echo "  Los datos no son validos";
 				}
 
 			}else{
 
-				echo "  Los datos no son validos  ";
+				echo "  Los datos no son validos";
 			}
 
 		}else{
 
-			echo "  Los datos no son validos  ";
+			echo "  Los datos no son validos";
 		}
 
 	}else {
-		echo "  Los datos no son validos  ";
+		echo "  Los datos no son validos";
 	}
 ?>
