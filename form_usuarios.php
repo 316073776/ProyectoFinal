@@ -25,12 +25,15 @@
 				<label for="contrasena" class=" uppercase ">Contraseña: </label>
 				<input type="password" name="contrasena" id="contrasena"  placeholder="Contraseña">
 
-				<button class="mb-5" type="submit" id="enviar">REGISTRAR</button>
+				<button class="mb-5" type="submit" id="enviar">GUARDAR</button>
 			
 		</form>
-		<a href="./index.php">REGRESAR</a>
+		<div class="btn">
+			<a href="./index.php">REGRESAR</a>
+		</div>
+		
 
 		</div>		
 	</div>
 </body>
-</html>
+</html

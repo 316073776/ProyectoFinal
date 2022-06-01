@@ -5,10 +5,11 @@
 		header('Location: index.php');
 	}
 ?>
+
 	<body class="flex flex-col justify-center items-center">
 		<script src="js/jquery-3.6.0.js"></script>
-                <script src="js/ajaxformartistas.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+        <script src="js/ajaxformartistas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 		
 		<?php require_once 'templates/menu.php'; ?>
 		
@@ -36,7 +37,11 @@
 					<button type="submit" id="enviar">GUARDAR</button>
 				
 				</form>
-				<a class="mt-5" href="./index.php">REGRESAR</a>
+
+				<div class="btn">
+					<a class="mt-5" href="./index.php">REGRESAR</a>
+				</div>
+				
 			</div>		
 		</div>
 	</body>

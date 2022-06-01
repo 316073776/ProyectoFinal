@@ -85,7 +85,7 @@ input {
 .container-login {
   position: relative;
   width: 400px;
-  height: 600px;
+  height: 650px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
@@ -175,12 +175,12 @@ input {
   background: var(--prussian-blue);
 }
 
-a {
+.btn a {
   float: right;
   box-shadow: inset 0 0 0 0 var(--prussian-blue);
   color: var(--celadon-blue);
   padding: 5px;
-  margin: 0 -.25rem;
+  margin: 6px;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -189,7 +189,7 @@ a {
   border-radius: 20px;
 }
 
-a:hover {
+.btn a:hover {
   color: var(--blanco-principal);
   box-shadow: inset 200px 0 0 0 var(--prussian-blue);
   border-radius: 20px;

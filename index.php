@@ -31,8 +31,13 @@
 			</form>
 		</div>
 
-		<a class="mt-5" href="./form_usuarios.php">Registrate aquí</a>
-		<a class="credits" href="creditos.php">CRÉDITOS</a>
+		<div class="btn">
+			<a class="mt-5" href="./form_usuarios.php">Registrate aquí</a>
+		</div>
+		<div class="btn">
+			<a class="credits" href="creditos.php">CRÉDITOS</a>
+		</div>
+		
 	</div>
 </body>
 </html>
