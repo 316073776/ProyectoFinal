@@ -19,12 +19,14 @@ body {
 }
 
 .nav {
+  display: flex;
+  flex-wrap: wrap;
+  height: 110px;
+  align-content: space-between;
   width: 100vw;
-  height: 100px;
   background-color: var(--blanco-principal);
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
   border-radius: 0 0 10px 10px;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 3rem;
@@ -32,7 +34,7 @@ body {
 }
 
 .nav li {
-  margin: 0 1rem;
+  margin: 5px;
   padding: 0.5rem 1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.3);
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
