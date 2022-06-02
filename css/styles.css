@@ -105,6 +105,13 @@ input {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
+.container-cats {
+  border-radius: 20px;
+  padding: 40px;
+  background: var(--blanco-principal);
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
 .brand-logo {
   height: 100px;
   width: 100px;
@@ -192,6 +199,27 @@ input {
 }
 
 .btn a:hover {
+  color: var(--blanco-principal);
+  box-shadow: inset 200px 0 0 0 var(--prussian-blue);
+  border-radius: 20px;
+}
+
+.btn-add a {
+  float: right;
+  box-shadow: inset 0 0 0 0 var(--prussian-blue);
+  color: var(--celadon-blue);
+  padding: 5px;
+  margin: 15px;
+  margin-top: 20px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.btn-add a:hover {
   color: var(--blanco-principal);
   box-shadow: inset 200px 0 0 0 var(--prussian-blue);
   border-radius: 20px;
