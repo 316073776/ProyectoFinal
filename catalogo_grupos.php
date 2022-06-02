@@ -17,7 +17,7 @@
       <div class="container-forms flex flex-col p-5 mt-5 mb-2">
       <div class="brand-title">CATÁLOGO DE GRUPOS</div>
       <div class="btn-add">
-        <a class="mt-5" href="form_artistas.php">AGREGAR GRUPO</a>
+        <a class="mt-5" href="form_grupos.php">AGREGAR GRUPO</a>
       </div>
     </div>
 
