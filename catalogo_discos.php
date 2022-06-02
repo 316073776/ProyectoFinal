@@ -48,8 +48,8 @@
                                 echo "<td>".obtenerNombreGrupo($row['grupo_id'])['nombre']."</td>";
                                 echo "<td>".$row['año']."</td>";
                                 echo "<td>".$row['genero']."</td>";
-                                echo "<td>".$row['disquera_id']."</td>";
-                                echo "<td>".$row['productor_id']."</td>";
+                                echo "<td>".obtenerNombreDisquera($row['disquera_id'])['nombre']."</td>";
+                                echo "<td>".obtenerNombreProductor($row['productor_id'])['nombre']."</td>";
                                 echo "<td>".$row['costo']."</td>";
 		?>
 				<td class="items-center" style="cursor: pointer;"><a href="editar_discos.php?disco_id=<?php echo $row['disco_id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
