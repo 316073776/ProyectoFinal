@@ -8,7 +8,7 @@
         if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $titulo)){
 
 
-                                $sql = "UPDATE bdrecords.canciones SET titulo = '$titulo', apellido = '$apellido', pais_nacimiento = '$pais_nacimiento', fecha_nacimiento = '$fecha_nacimiento' WHERE cancion_id = $cancion_id;";
+                                $sql = "UPDATE bdrecords.canciones SET titulo = '$titulo' WHERE cancion_id = $cancion_id;";
 
                                 $result = pg_query($con, $sql);
 

@@ -1,6 +1,6 @@
 <?php
 	include 'conexion.php';
-	$grupo_id = strip_tags($_POST['disquera_id']);
+	$disquera_id = strip_tags($_POST['disquera_id']);
 	$nombre = strip_tags($_POST['nombre']);
 	$pais = strip_tags($_POST['pais']);
 

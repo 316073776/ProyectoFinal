@@ -4,6 +4,9 @@
 
 		header('Location: index.php');
 	}
+
+	$discos = obtenerDiscos();
+
 ?>
 
 	<body class="flex flex-col justify-center items-center">
@@ -18,10 +21,18 @@
 			<div class="inputs">
 
 				<form id="formularioCanciones">
-
-					<label for="titulo" class="uppercase">Título: </label>
-					<input type="text" name="titulo" id="titulo" placeholder="Título">
-
+					<div>
+						<label for="titulo" class="uppercase">Título: </label>
+						<input type="text" name="titulo" id="titulo" placeholder="Título">
+					</div>
+					<div class="w-full flex flex-col mb-5">
+                                                <label for="disco_id" class="uppercase">Disco: </label>
+                                                <select name="disco_id" id="disco_id">
+                            			<?php foreach ($discos as $disco) : ?>
+                                			<option value="<?php echo $disco['disco_id'] ?>"><?php echo $disco['titulo'] ?></option>
+                            			<?php endforeach; ?>
+                        			</select>
+                                        </div>
 					<button type="submit" id="enviar">GUARDAR</button>
 
 				</form>
