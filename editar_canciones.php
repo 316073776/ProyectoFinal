@@ -22,20 +22,34 @@
     }
 
 ?>
-   <body>
+
+   	<body class="flex flex-col justify-center items-center">
+   		<script src="./js/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../js/ajaxformcancionesAct.js"></script>
+
    		<?php require_once 'templates/menu.php'; ?>
-		<div class="flex flex-col justify-center items-center mt-5 mb-5">
-			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
-				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para editar la cancion <?php echo $cancion['titulo']; ?></h1>
+
+		<div class="container-forms flex flex-col p-5 mt-5 mb-5">
+			<div class="brand-title">EDITAR CANCIÓN "<?php echo $cancion['titulo']; ?>"</div>
+			<div class="inputs">
+
 				<form id="formularioCancionActualizar">
+
 					<input type="hidden" name="cancion_id" id="cancion_id" value="<?php echo $cancion['cancion_id']; ?>">
-					<div class="w-full flex flex-col mb-5">
-						<label for="titulo" class="text-gray-700 uppercase font-bold">Titulo: </label>
-						<input type="text" name="titulo" id="titulo" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $cancion['titulo']; ?>">
+
+					<label for="titulo" class="uppercase">Titulo: </label>
+					<input type="text" name="titulo" id="titulo" value="<?php echo $cancion['titulo']; ?>">
 					</div>
 
-					<button type="submit" id="enviar" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Editar</button>
+					<button type="submit" id="enviar">EDITAR</button>
 				</form>
+
+				<div class="btn">
+					<a class="mt-5" href="./catalogo_canciones.php">REGRESAR</a>
+				</div>
+
 			</div>
 		</div>
-		<?php require_once 'templates/footer.php'; ?>
+	</body>
+</html>

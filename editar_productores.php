@@ -22,28 +22,31 @@
     }
 
 ?>
-   <body>
+   	<body class="flex flex-col justify-center items-center">
+   		<script src="./js/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../js/ajaxformproductoresAct.js"></script>	
+
    		<?php require_once 'templates/menu.php'; ?>
-		<div class="flex flex-col justify-center items-center mt-5 mb-5">
-			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
-				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para editar la productor <?php echo $productor['nombre']; ?></h1>
+
+		<div class="container-forms flex flex-col p-5 mt-5 mb-5">
+			<div class="brand-title">EDITAR PRODUCTOR "<?php echo $productor['nombre']; ?>"</div>
+			<div class="inputs">
 				<form id="formularioProductorActualizar">
 					<input type="hidden" name="productor_id" id="productor_id" value="<?php echo $productor['productor_id']; ?>">
-					<div class="w-full flex flex-col mb-5">
-						<label for="titulo" class="text-gray-700 uppercase font-bold">Nombre: </label>
-						<input type="text" name="nombre" id="nombre" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $productor['nombre']; ?>">
-					</div>
-					<div class="w-full flex flex-col mb-5">
-						<label for="apellido" class="text-gray-700 uppercase font-bold">Apellido: </label>
-						<input type="text" name="apellido" id="apellido" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $productor['apellido']; ?>">
-					</div>
-					<div class="w-full flex flex-col mb-5">
-                                                <label for="fecha_nacimiento" class="text-gray-700 uppercase font-bold">Fecha de nacimiento: </label>
-                                                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $productor['fecha_nacimiento']; ?>">
-                                        </div>
-
-					<button type="submit" id="enviar" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Editar</button>
+					
+					<label for="titulo" class="uppercase">Nombre: </label>
+					<input type="text" name="nombre" id="nombre"   value="<?php echo $productor['nombre']; ?>">
+				
+					<label for="apellido" class="uppercase">Apellido: </label>
+					<input type="text" name="apellido" id="apellido"   value="<?php echo $productor['apellido']; ?>">
+					
+                    <label for="fecha_nacimiento" class="uppercase">Fecha de nacimiento: </label>
+                    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"   value="<?php echo $productor['fecha_nacimiento']; ?>">
+                                        
+					<button type="submit" id="enviar">EDITAR</button>
 				</form>
 			</div>
 		</div>
-		<?php require_once 'templates/footer.php'; ?>
+	</body>
+</html>

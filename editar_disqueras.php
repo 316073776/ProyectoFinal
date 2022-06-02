@@ -22,24 +22,35 @@
     }
 
 ?>
-   <body>
+   	<body class="flex flex-col justify-center items-center">
+
+   		<script src="./js/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../js/ajaxformdisquerasAct.js"></script>	
+
    		<?php require_once 'templates/menu.php'; ?>
-		<div class="flex flex-col justify-center items-center mt-5 mb-5">
-			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
-				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para editar la disquera <?php echo $disquera['nombre']; ?></h1>
+
+		<div class="container-forms flex flex-col p-5 mt-5 mb-5">
+			<div class="brand-title">EDITAR DISQUERA "<?php echo $disquera['nombre']; ?>"</div>
+			<div class="inputs">
+
 				<form id="formularioDisqueraActualizar">
 					<input type="hidden" name="disquera_id" id="disquera_id" value="<?php echo $disquera['disquera_id']; ?>">
-					<div class="w-full flex flex-col mb-5">
-						<label for="titulo" class="text-gray-700 uppercase font-bold">Nombre: </label>
-						<input type="text" name="nombre" id="nombre" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $disquera['nombre']; ?>">
-					</div>
-					<div class="w-full flex flex-col mb-5">
-						<label for="pais" class="text-gray-700 uppercase font-bold">Pais: </label>
-						<input type="text" name="pais" id="pais" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $disquera['pais']; ?>">
-					</div>
 
-					<button type="submit" id="enviar" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Editar</button>
+					<label for="titulo" class=" uppercase">Nombre: </label>
+					<input type="text" name="nombre" id="nombre"   value="<?php echo $disquera['nombre']; ?>">
+				
+					<label for="pais" class=" uppercase">Pais: </label>
+					<input type="text" name="pais" id="pais"   value="<?php echo $disquera['pais']; ?>">
+
+					<button type="submit" id="enviar">EDITAR</button>
 				</form>
+
+				<div class="btn">
+					<a class="mt-5" href="./catalogo_disqueras.php">REGRESAR</a>
+				</div>
+
 			</div>
 		</div>
-		<?php require_once 'templates/footer.php'; ?>
+	</body>
+</html>

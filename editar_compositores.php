@@ -22,32 +22,44 @@
     }
 
 ?>
-   <body>
+
+   <body class="flex flex-col justify-center items-center">
+
+   		<script src="./js/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../js/ajaxformcompositoresAct.js"></script>
+
    		<?php require_once 'templates/menu.php'; ?>
-		<div class="flex flex-col justify-center items-center mt-5 mb-5">
-			<div class="rounded shadow-lg overflow-hidden w-6/12 flex flex-col p-5">
-				<h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Formulario para editar la compositor <?php echo $compositor['nombre']; ?></h1>
+
+		<div class="container-forms flex flex-col p-5 mt-5 mb-5">
+			<div class="brand-title">EDITAR COMPOSITOR "<?php echo $compositor['nombre']; ?>"</div>
+			<div class="inputs">
+
 				<form id="formularioCompositorActualizar">
 					<input type="hidden" name="compositor_id" id="compositor_id" value="<?php echo $compositor['compositor_id']; ?>">
-					<div class="w-full flex flex-col mb-5">
-						<label for="titulo" class="text-gray-700 uppercase font-bold">Nombre: </label>
-						<input type="text" name="nombre" id="nombre" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $compositor['nombre']; ?>">
-					</div>
-					<div class="w-full flex flex-col mb-5">
-						<label for="apellido" class="text-gray-700 uppercase font-bold">Apellido: </label>
-						<input type="text" name="apellido" id="apellido" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $compositor['apellido']; ?>">
-					</div>
-					<div class="w-full flex flex-col mb-5">
-                                                <label for="pais_nacimiento" class="text-gray-700 uppercase font-bold">Pais de nacimiento: </label>
-                                                <input type="text" name="pais_nacimiento" id="pais_nacimiento" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $compositor['pais_nacimiento']; ?>">
-                                        </div>
-					<div class="w-full flex flex-col mb-5">
-                                                <label for="fecha_nacimiento" class="text-gray-700 uppercase font-bold">Fecha de nacimiento: </label>
-                                                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" value="<?php echo $compositor['fecha_nacimiento']; ?>">
-                                        </div>
 
-					<button type="submit" id="enviar" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Editar</button>
+					<label for="titulo" class="uppercase">Nombre: </label>
+					<input type="text" name="nombre" id="nombre"   value="<?php echo $compositor['nombre']; ?>">
+				
+					<label for="apellido" class="uppercase">Apellido: </label>
+					<input type="text" name="apellido" id="apellido"   value="<?php echo $compositor['apellido']; ?>">
+				
+                    <label for="pais_nacimiento" class="uppercase">Pais de nacimiento: </label>
+                    <input type="text" name="pais_nacimiento" id="pais_nacimiento"   value="<?php echo $compositor['pais_nacimiento']; ?>">
+            
+                    <label for="fecha_nacimiento" class="uppercase">Fecha de nacimiento: </label>
+                    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"   value="<?php echo $compositor['fecha_nacimiento']; ?>">
+                                       
+
+					<button type="submit" id="enviar">EDITAR</button>
 				</form>
+
+				<div class="btn">
+					<a class="mt-5" href="./catalogo_compositores.php">REGRESAR</a>
+				</div>
+
 			</div>
 		</div>
-		<?php require_once 'templates/footer.php'; ?>
+	</body>
+</html>
+	
