@@ -6,26 +6,29 @@
     header('Location: index.php');
   }
 ?>
-<body>
+
+  <body class="flex flex-col justify-center items-center">
     <?php
                 include 'conexion.php';
                 $query = "Select grupo_id, nombre, pais_origen from bdrecords.grupos";
                 $ejecucion = pg_query($con,$query);
     ?>
     <?php require_once 'templates/menu.php'; ?>
-      <div class="flex flex-col justify-center items-center mt-5 mb-5">
-        <div class="rounded shadow-lg overflow-hidden flex flex-col p-4">
-          <h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Catálogo de grupos</h1>
-          <a href="form_grupos.php" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white text-center uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Agregar grupo</a>
+      <div class="container-forms flex flex-col p-5 mt-5 mb-2">
+      <div class="brand-title">CATÁLOGO DE GRUPOS</div>
+      <div class="btn-add">
+        <a class="mt-5" href="form_artistas.php">AGREGAR GRUPO</a>
+      </div>
+    </div>
 
-          </br>
-          </br>
+    <div class="flex flex-col justify-center items-center mt-5 mb-5">
+      <div class="overflow-hidden flex flex-col p-4">
           <table class="neumorphic">
             <thead>
               <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-		<th>Pais de Origen</th>
+		<th>País de origen</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>

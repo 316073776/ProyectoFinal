@@ -46,6 +46,12 @@
                                         
 					<button type="submit" id="enviar">EDITAR</button>
 				</form>
+
+
+				<div class="btn">
+					<a class="mt-5" href="./catalogo_productores.php">REGRESAR</a>
+				</div>
+
 			</div>
 		</div>
 	</body>

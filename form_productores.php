@@ -1,5 +1,10 @@
 <?php require_once 'templates/header.php'; ?>
+<?php 
+	if(!isUser()){
 
+		header('Location: index.php');
+	}
+?>
 
 	<body class="flex flex-col justify-center items-center">
         <script src="js/jquery-3.6.0.js"></script>

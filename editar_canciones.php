@@ -40,7 +40,7 @@
 
 					<label for="titulo" class="uppercase">Titulo: </label>
 					<input type="text" name="titulo" id="titulo" value="<?php echo $cancion['titulo']; ?>">
-					</div>
+				
 
 					<button type="submit" id="enviar">EDITAR</button>
 				</form>

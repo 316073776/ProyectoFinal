@@ -6,26 +6,30 @@
     header('Location: index.php');
   }
 ?>
-<body>
+
+  <body class="flex flex-col justify-center items-center">
     <?php
                 include 'conexion.php';
                 $query = "Select disquera_id, nombre, pais from bdrecords.disqueras";
                 $ejecucion = pg_query($con,$query);
     ?>
     <?php require_once 'templates/menu.php'; ?>
-      <div class="flex flex-col justify-center items-center mt-5 mb-5">
-        <div class="rounded shadow-lg overflow-hidden flex flex-col p-4">
-          <h1 class="uppercase text-indigo-600 font-bold text-4xl mb-5">Catálogo de disqueras</h1>
-          <a href="form_disqueras.php" class="bg-indigo-700 w-full py-3 px-10 rounded-xl text-white text-center uppercase font-bold mt-5 hover: cursor-pointer hover:bg-indigo-800 md:w-auto">Agregar disquera</a>
+      <<div class="container-forms flex flex-col p-5 mt-5 mb-2">
+      <div class="brand-title">CATÁLOGO DE DISQUERAS</div>
+      <div class="btn-add">
+        <a class="mt-5" href="form_artistas.php">AGREGAR DISQUERA</a>
+      </div>
+    </div>
 
-          </br>
+    <div class="flex flex-col justify-center items-center mt-5 mb-5">
+      <div class="overflow-hidden flex flex-col p-4">
           </br>
           <table class="neumorphic">
             <thead>
               <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-		<th>Pais</th>
+		<th>País</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
