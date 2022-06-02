@@ -25,6 +25,9 @@
 				<label for="contrasena" class=" uppercase ">Contraseña: </label>
 				<input type="password" name="contrasena" id="contrasena"  placeholder="Contraseña">
 
+				<label for="contrasena2" class=" uppercase ">Confirmar contraseña: </label>
+                                <input type="password" name="contrasena2" id="contrasena2"  placeholder="Contraseña">
+
 				<button class="mb-5" type="submit" id="enviar">GUARDAR</button>
 			
 		</form>

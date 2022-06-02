@@ -8,6 +8,8 @@ $(document).ready(function(){
 				apaterno: $("#apaterno").val(),
 				amaterno: $("#amaterno").val(),
 				contrasena: $("#contrasena").val(),
+				contrasena2: $("#contrasena2").val(),
+
 			},
 			function(data, status){
 				$("#formularioUsuarios").trigger("reset");
@@ -45,6 +47,11 @@ $(document).ready(function(){
 				minlength: 8,
 				maxlength: 15
                         },
+			contrasena2: {
+                                required: true,
+                                minlength: 8,
+                                maxlength: 15
+                        }
 		},
 
 		messagges: {
@@ -72,7 +79,12 @@ $(document).ready(function(){
                                 required: "Campo obligatorio",
 				minlength: "Contraseña debe de ser de minimo 8 caracteres",
 				maxlength: "Contraseña debe de ser de maximo 15 caracteres"
-                      	}
+                      	},
+			contrasena2: {
+                                required: "Campo obligatorio",
+                                minlength: "Contraseña debe de ser de minimo 8 caracteres",
+                                maxlength: "Contraseña debe de ser de maximo 15 caracteres"
+                        }
 		}
 	});
 

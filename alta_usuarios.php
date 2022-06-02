@@ -5,12 +5,13 @@
 	$apaterno = strip_tags($_POST['apaterno']);
 	$amaterno = strip_tags($_POST['amaterno']);
 	$contrasena = strip_tags($_POST['contrasena']);
+	$contrasena2 = strip_tags($_POST['contrasena2']);
 
 	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $username)){
-	if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
-		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $apaterno)){
-            if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $amaterno)){
-				if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $contrasena)){
+		if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $nombre)){
+			if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $apaterno)){
+            			if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $amaterno)){
+					if(preg_match('/[A-Za-z áéíóúñ]{2,50}/i', $contrasena)){
 
 						$sql = "SELECT * FROM bdrecords.usuarios WHERE username = '$username';";
 						$result = pg_query($con,$sql);
@@ -18,22 +19,25 @@
 
 							echo 'Ya existe ese nombre de usuario, prueba con otro';
 						}else{
+							if($contrasena != $contrasena2){
+								echo 'Las contraseñas no coinciden';
+							}else{
 
-							$contrasena = password_hash($contrasena, PASSWORD_DEFAULT);
-							$insercion= "insert into bdrecords.usuarios(nombre,username,apaterno,amaterno,contrasena) values('$nombre','$username','$apaterno','$amaterno','$contrasena')";
-							$query = pg_query($con,$insercion);
-							if($query){
+								$contrasena = password_hash($contrasena, PASSWORD_DEFAULT);
+								$insercion= "insert into bdrecords.usuarios(nombre,username,apaterno,amaterno,contrasena) values('$nombre','$username','$apaterno','$amaterno','$contrasena')";
+								$query = pg_query($con,$insercion);
+								if($query){
 									echo true;
-							} else {
+								} else {
 									echo "  No se ha podido almacenar en la base de datos  ";
+								}
+								pg_close($con);
 							}
-							pg_close($con);
 						}
-					
-                }
-	        }
-        }
-	}
+                			}
+	        		}
+        		}
+		}
 	}else {
 		echo "  Los datos no son validos  ";
 	}
