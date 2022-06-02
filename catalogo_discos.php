@@ -45,7 +45,7 @@
                         	echo "<tr>";
                                 echo "<td>".$row['disco_id']."</td>";
                                 echo "<td>".$row['titulo']."</td>";
-                                echo "<td>".obtenerNombreGrupo($row['grupo_id'])."</td>";
+                                echo "<td>".obtenerNombreGrupo($row['grupo_id'])['nombre']."</td>";
                                 echo "<td>".$row['año']."</td>";
                                 echo "<td>".$row['genero']."</td>";
                                 echo "<td>".$row['disquera_id']."</td>";
