@@ -4,6 +4,7 @@ $(document).ready(function(){
 		$.post("alta_canciones.php",
 			{
 				titulo: $("#titulo").val(),
+				disco_id: $("#disco_id").val()
 			},
 			function(data, status){
 				alert(data);
