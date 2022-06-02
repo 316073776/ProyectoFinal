@@ -58,3 +58,15 @@ function obtenerDiscos(){
 
     return $discos;
 }
+
+function obtenerNombreGrupo($id){
+
+    global $con;
+
+    $sql = "SELECT nombre FROM bdrecords.grupos WHERE grupo_id = $id;";
+    $result = pg_query($con, $sql);
+    $grupo = pg_fetch_assoc($result);
+
+    return $grupo;
+
+}
