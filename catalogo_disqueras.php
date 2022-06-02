@@ -17,7 +17,7 @@
       <<div class="container-forms flex flex-col p-5 mt-5 mb-2">
       <div class="brand-title">CATÁLOGO DE DISQUERAS</div>
       <div class="btn-add">
-        <a class="mt-5" href="form_artistas.php">AGREGAR DISQUERA</a>
+        <a class="mt-5" href="form_disqueras.php">AGREGAR DISQUERA</a>
       </div>
     </div>
 
