@@ -5,12 +5,13 @@
 
     header('Location: index.php');
   }
+
 ?>
 
   <body>
     <?php
                 include 'conexion.php';
-                $query = "Select disco_id, titulo, grupo_id, año, genero, costo from bdrecords.discos";
+                $query = "Select disco_id, titulo, grupo_id, año, genero, disquera_id, productor_id, costo from bdrecords.discos";
                 $ejecucion = pg_query($con,$query);
     ?>
     <?php require_once 'templates/menu.php'; ?>
@@ -26,8 +27,11 @@
               <tr>
 		<th>ID</th>
                 <th>Titulo</th>
+		<th>Grupo</th>
 		<th>Año</th>
 		<th>Genero</th>
+		<th>Disquera</th>
+		<th>Productor</th>
 		<th>Costo</th>
                 <th>Edit</th>
                 <th>Delete</th>
@@ -41,13 +45,16 @@
                         	echo "<tr>";
                                 echo "<td>".$row['disco_id']."</td>";
                                 echo "<td>".$row['titulo']."</td>";
+                                echo "<td>".$row['grupo_id']."</td>";
                                 echo "<td>".$row['año']."</td>";
                                 echo "<td>".$row['genero']."</td>";
+                                echo "<td>".$row['disquera_id']."</td>";
+                                echo "<td>".$row['productor_id']."</td>";
                                 echo "<td>".$row['costo']."</td>";
 		?>
 				<td class="items-center" style="cursor: pointer;"><a href="editar_discos.php?disco_id=<?php echo $row['disco_id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
                 		<td class="items-center" style="cursor: pointer;"><a href="eliminar_disco.php?disco_id=<?php echo $row['disco_id']; ?>"><i class="bi bi-trash-fill"></i></a></td>
-                                        <?php       
+                                        <?php
 					 echo "</tr>";
 
                                                         }

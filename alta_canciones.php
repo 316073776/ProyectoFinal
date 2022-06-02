@@ -14,10 +14,11 @@
 
 		if($query){
 
-			if($disco_id){
+			echo "Se ha almacenado en la Base de datos de forma correcta";
+			if(isset($disco_id)){
 
-				$sql = "INSERT INTO disco_cancion (disco_id, cancion_id) VALUES ($disco_id, $cancion_id);";
-				$query = pg_query($con,$insercion);
+				$sql = "INSERT INTO bdrecords.disco_cancion (disco_id, cancion_id) VALUES ($disco_id, $cancion_id);";
+				$query = pg_query($con,$sql);
 				
 				if($query){
 
@@ -28,7 +29,6 @@
 				}
 			}
             
-			echo "Se ha almacenado en la base de datos de forma correcta ";
 			
         	
 		} else {
