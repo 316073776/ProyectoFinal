@@ -48,3 +48,13 @@ function obtenerDisqueras(){
 
     return $disqueras;
 }
+
+function obtenerDiscos(){
+
+    global $con;
+    $sql = "SELECT * FROM bdrecords.discos";
+    $discos = pg_query($con, $sql);
+    $discos = pg_fetch_all($discos, PGSQL_ASSOC);
+
+    return $discos;
+}

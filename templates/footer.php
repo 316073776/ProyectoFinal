@@ -13,5 +13,10 @@
 		<script src="../js/ajaxformdiscosAct.js"></script>
 		<script src="../js/ajaxformartistasAct.js"></script>
 		<script src="../js/ajaxformgruposAct.js"></script>	
+		<script src="../js/ajaxformdisquerasAct.js"></script>	
+		<script src="../js/ajaxformproductoresAct.js"></script>	
+		<script src="../js/ajaxformcompositoresAct.js"></script>	
+		<script src="../js/ajaxformcancionesAct.js"></script>	
+
     </body>
 </html>
