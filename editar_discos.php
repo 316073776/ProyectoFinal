@@ -41,7 +41,7 @@
 						<label for="grupo_id" class="text-gray-700 uppercase font-bold">Grupo ID: </label>
 						<select name="grupo_id" id="grupo_id">
                             <?php foreach ($grupos as $grupo) : ?>
-                                <option value="<?php echo $grupo['grupo_id'] ?>" value="<?=(isset($disco) && $grupo['grupo_id'] == $disco['grupo_id']) ? 'selected' : ''?>"><?php echo $grupo['nombre'] ?></option>
+                                <option value="<?php echo $grupo['grupo_id'] ?>" <?=(isset($disco) && $grupo['grupo_id'] == $disco['grupo_id']) ? 'selected' : ''?>><?php echo $grupo['nombre'] ?></option>
                             <?php endforeach; ?>
                         </select>
 					</div>
@@ -57,7 +57,7 @@
 						<label for="disquera_id" class="text-gray-700 uppercase font-bold">Disquera ID: </label>
 						<select name="disquera_id" id="disquera_id">
                             <?php foreach ($disqueras as $disquera) : ?>
-                                <option value="<?php echo $disquera['disquera_id'] ?>" value="<?=(isset($disco) && $disquera['disquera_id'] == $disco['disquera_id']) ? 'selected' : ''?>"><?php echo $disquera['nombre'] ?></option>
+                                <option value="<?php echo $disquera['disquera_id'] ?>" <?=(isset($disco) && $disquera['disquera_id'] == $disco['disquera_id']) ? 'selected' : ''?>><?php echo $disquera['nombre'] ?></option>
                             <?php endforeach; ?>
                         </select>
 					</div>
@@ -65,7 +65,7 @@
 						<label for="productor_id" class="text-gray-700 uppercase font-bold">Productor ID: </label>
 						<select name="productor_id" id="productor_id">
                             <?php foreach ($productores as $productor) : ?>
-                                <option value="<?php echo $productor['productor_id'] ?>" value="<?=(isset($disco) && $productor['productor_id'] == $disco['productor_id']) ? 'selected' : ''?>"><?php echo $productor['nombre'] ?></option>
+                                <option value="<?php echo $productor['productor_id'] ?>" <?=(isset($disco) && $productor['productor_id'] == $disco['productor_id']) ? 'selected' : ''?>><?php echo $productor['nombre'] ?></option>
                             <?php endforeach; ?>
                         </select>
 					</div>

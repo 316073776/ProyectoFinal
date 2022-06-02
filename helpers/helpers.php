@@ -70,3 +70,28 @@ function obtenerNombreGrupo($id){
     return $grupo;
 
 }
+
+function obtenerNombreDisquera($id){
+
+    global $con;
+
+    $sql = "SELECT nombre FROM bdrecords.disqueras WHERE disquera_id = $id;";
+    $result = pg_query($con, $sql);
+    $disquera = pg_fetch_assoc($result);
+
+    return $disquera;
+
+}
+
+
+function obtenerNombreProductor($id){
+
+    global $con;
+
+    $sql = "SELECT nombre FROM bdrecords.productores WHERE productor_id = $id;";
+    $result = pg_query($con, $sql);
+    $productor = pg_fetch_assoc($result);
+
+    return $productor;
+
+}
