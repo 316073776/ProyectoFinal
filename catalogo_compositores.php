@@ -16,7 +16,7 @@
       <div class="container-forms flex flex-col p-5 mt-5 mb-2">
       <div class="brand-title">CATÁLOGO DE COMPOSITORES</div>
       <div class="btn-add">
-        <a class="mt-5" href="form_artistas.php">AGREGAR COMPOSITOR</a>
+        <a class="mt-5" href="form_compositores.php">AGREGAR COMPOSITOR</a>
       </div>
     </div>
 
